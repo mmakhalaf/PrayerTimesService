@@ -1,0 +1,9959 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+<head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link rel="stylesheet" href="http://hakanersu.github.io/AmaranJS/dist/css/amaran.min.css">
+
+    <link rel="stylesheet" href="http://hakanersu.github.io/AmaranJS/dist/css/animate.min.css">
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+
+
+
+<title>UK Mosque Masjid Directory - Complete Listings</title>
+
+
+
+<meta name="description" content="Comprehensive Complete Directory Search Listings of Muslim Mosques in the United Kingdom"> 
+
+
+
+<meta name="keywords" content="Muslim, islam, uk, united, kingdom, charities, charity, muslim, mosques, masjid, prayer time-table, schools, events, muslim, islamic, directory, dawah, prayer rooms "> 
+
+
+
+<meta name="Author" content="Tahire Mehmood Faruq" />
+
+
+
+<meta name="google-site-verification" content="cgY5eCWO-9RWtvL9a9wYL5mI6C6qhBlatmf5o_i7K20" />
+
+
+
+<META name="y_key" content="f4fe2b8c705ebf13">
+
+
+
+<meta name="msvalidate.01" content="80D9B4BC74328908F3D9F4288546E5A4" />
+
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link rel="icon" href="img/icon_mosque.ico" type="image/x-icon">
+
+
+
+<link rel="shortcut icon" href="img/icon_mosque.ico" type="image/x-icon" />
+
+
+
+<link media="screen" rel="stylesheet" href="css/colorbox.css" />
+
+
+
+    <style type="text/css" media="screen">
+
+
+
+    
+
+
+
+    .slide-out-div {
+
+
+
+          padding: 20px;
+
+
+
+          width: 280px;
+
+
+
+		  height:250px;
+
+
+
+          background: white;
+
+
+
+          border: 1px solid #29216d;
+
+
+
+    }
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+	</style>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/jquery.tabSlideOut.v1.3.js"></script>
+
+
+
+
+
+
+
+         <script>
+
+
+
+         $(function(){
+
+
+
+             $('.slide-out-div').tabSlideOut({
+
+
+
+                 tabHandle: '.handle',                              //class of the element that will be your tab
+
+
+
+                 pathToTabImage: 'images/contact_tab.gif',          //path to the image for the tab (optionaly can be set using css)
+
+
+
+                 imageHeight: '122px',                               //height of tab image
+
+
+
+                 imageWidth: '40px',                               //width of tab image    
+
+
+
+                 tabLocation: 'left',                               //side of screen where tab lives, top, right, bottom, or left
+
+
+
+                 speed: 300,                                        //speed of animation
+
+
+
+                 action: 'click',                                   //options: 'click' or 'hover', action to trigger animation
+
+
+
+                 topPos: '200px',                                   //position from the top
+
+
+
+                 fixedPosition: false                               //options: true makes it stick(fixed position) on scroll
+
+
+
+             });
+
+
+
+         });
+
+
+
+
+
+
+
+         </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-5.1.1-packed.js"></script>
+
+
+
+
+
+
+
+		<script type="text/javascript" language="javascript">
+
+
+
+			$(function() {
+
+
+
+
+
+
+
+				//	Basic carousel, no options
+
+
+
+				$('#foo0').carouFredSel();
+
+
+
+
+
+
+
+				//	Basic carousel + timer
+
+
+
+				$('#foo1').carouFredSel({
+
+
+
+					auto: {
+
+
+
+						pauseOnHover: 'resume',
+
+
+
+						onPauseStart: function( percentage, duration ) {
+
+
+
+							$(this).trigger( 'configuration', ['width', function( value ) { 
+
+
+
+								$('#timer1').stop().animate({
+
+
+
+									width: value
+
+
+
+								}, {
+
+
+
+									duration: duration,
+
+
+
+									easing: 'linear'
+
+
+
+								});
+
+
+
+							}]);
+
+
+
+						},
+
+
+
+						onPauseEnd: function( percentage, duration ) {
+
+
+
+							$('#timer1').stop().width( 0 );
+
+
+
+						},
+
+
+
+						onPausePause: function( percentage, duration ) {
+
+
+
+							$('#timer1').stop();
+
+
+
+						}
+
+
+
+					}
+
+
+
+				});
+
+
+
+
+
+
+
+				//	Scrolled by user interaction
+
+
+
+				$('#foo2').carouFredSel({
+
+
+
+					prev: '#prev2',
+
+
+
+					next: '#next2',
+
+
+
+					pagination: "#pager2",
+
+
+
+					auto: false
+
+
+
+				});
+
+
+
+
+
+
+
+				//	Variable number of visible items with variable sizes
+
+
+
+				$('#foo3').carouFredSel({
+
+
+
+					width: 360,
+
+
+
+					height: 'auto',
+
+
+
+					prev: '#prev3',
+
+
+
+					next: '#next3',
+
+
+
+					auto: false
+
+
+
+				});
+
+
+
+
+
+
+
+				//	Fluid layout example 1
+
+
+
+				$('#fooF0').carouFredSel({
+
+
+
+					items: {
+
+
+
+						visible: 1,
+
+
+
+						width: 'variable'
+
+
+
+					}
+
+
+
+				});
+
+
+
+				$(window).resize(function() {
+
+
+
+					var newWidth = $(window).width();
+
+
+
+					$('#fooF0').width( newWidth * $('#fooF0').children().length ); // set width of carousel, to ensure the items fit next to eachother
+
+
+
+					$('#fooF0').parent().width( newWidth ); // set width of carousel-wrapper
+
+
+
+					$('#fooF0').children().width( newWidth - 22 ); // set width of items, -22px for border and margin
+
+
+
+				});
+
+
+
+
+
+
+
+				//	Fuild layout example 2
+
+
+
+				$(window).resize(function() {
+
+
+
+					var newWidth = $(window).width();
+
+
+
+					$('#fooF1').carouFredSel({
+
+
+
+						width: newWidth,
+
+
+
+						scroll: 2
+
+
+
+					});
+
+
+
+				});
+
+
+
+				
+
+
+
+				$(window).resize();
+
+
+
+			});
+
+
+
+		</script>
+
+
+
+
+
+
+
+<script src="js/colorbox/jquery.colorbox.js"></script>
+
+
+
+
+
+
+
+<script>
+
+
+
+		$(document).ready(function(){
+
+
+
+
+
+
+
+			$(".example8").colorbox({width:"40%", inline:true, href:"#inline_example1"});
+			$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+
+
+
+
+
+
+
+		});
+
+
+
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+		$(document).ready(function(){
+
+
+
+
+
+
+
+			$(".example1").colorbox({width:"40%", height:"80%", iframe:true});
+
+
+
+
+
+
+
+		});
+
+
+
+	</script>   
+
+
+
+    
+
+
+
+<script>
+
+
+
+		$(document).ready(function(){
+
+
+
+
+
+
+
+			$(".example7").colorbox({width:"80%", height:"80%", iframe:true});
+
+
+
+
+
+
+
+		});
+
+
+
+	</script>    
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript' src='js/jquery.autocomplete.js'></script>
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="css/jquery.autocomplete.css" />
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+
+
+$().ready(function() {
+
+
+
+	$("#course").autocomplete("process_data/get_mosque_list.php", {
+
+
+
+		width: 720,
+
+
+
+		matchContains: true,
+
+
+
+		selectFirst: false
+
+
+
+	});
+
+
+
+});
+
+
+
+</script>
+
+
+
+<style type="text/css">
+
+
+
+<!--
+
+
+
+.style1 {
+
+
+
+	color: #FF0000;
+
+
+
+	font-weight: bold;
+
+
+
+}
+
+
+
+-->
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+<body id="home-page">           
+
+
+
+<!--
+    <script src="http://www.mosquedirectory.co.uk/jquery.amaran.js"></script>
+    <script>
+$.amaran({
+    content:{
+        img:'http://www.mosquedirectory.co.uk/img/tahire_S.jpg',
+        user:'Tahire Faruq',
+        message:'Salam Brother/Sisters, We need your help with <strong>Masjid Pictures</strong>, Please email me on :<br/><a href="mailto:info@mosquedirectory.co.uk" style="color: #FFFF00">info@mosquedirectory.co.uk</a>'
+       },
+    theme:'user green',
+	sticky:true,
+	closeOnClick:false,
+	closeButton:true
+});
+</script>
+-->
+
+<script type="text/javascript">
+
+
+
+
+
+
+
+  var _gaq = _gaq || [];
+
+
+
+  _gaq.push(['_setAccount', 'UA-16305089-3']);
+
+
+
+  _gaq.push(['_trackPageview']);
+
+
+
+
+
+
+
+  (function() {
+
+
+
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+
+
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+
+
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+
+
+  })();
+
+
+
+
+
+
+
+</script>
+
+
+
+<div id="header"> <div class="wrapper clearfix"> 
+
+
+
+
+
+
+
+<ul id="tools"> 
+
+
+
+
+
+
+
+<li id="feedback"><a class="example7" href="aboutme.php">About Me</a></li> 
+
+
+
+
+
+
+
+<li id="feedback"><a href="contact-us.php">Contact Us</a></li> 
+
+
+
+</ul> 
+
+
+
+
+
+
+
+<ul id="global-nav">   
+
+
+
+<li><a href="http://www.mosquedirectory.co.uk/" title="Home" >Home</a></li>       
+<li><a href="http://www.mosquedirectory.co.uk//browse" title="Browse Mosques" >Browse</a></li>      
+<li><a href="http://www.mosquedirectory.co.uk/mosque-result/map?m=eyJpdiI6IlwvSk5Ialk2M0JwdmY1XC80YXE0Kzd0dz09IiwidmFsdWUiOiI2ckxOMVRoWHB6TFRCNTNISnRyTnhnPT0iLCJtYWMiOiI3NDI0ZTBlNjBhYTQ3N2E1YzQxNzMyNzFiMDM2NGViZjgxMWM4NTVkZTg2ZWE3NzM5ZTc3NzQ0N2Q2MDA0NWNmIn0%3D" title="Find Mosques in You Local Area" >Mosque Maps</a></li>  
+<li><a href="" title="Find Mosques in You Local Area" >info@mosquedirectory.co.uk</a></li>  
+
+
+<li><div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-like" data-href="https://www.facebook.com/pages/Mosque-Directory/141064065953224" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+</li> 
+ 
+
+
+
+
+
+
+
+
+
+
+
+</ul> 
+
+
+
+
+
+
+
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div> 
+
+
+
+	<div id="search-form"> 
+
+
+
+    <div class="wrapper clearfix">  
+
+
+
+
+
+
+
+    <div align="center"><img src="img/logo.png" alt="Mosques Directory" width="413" height="171" /></div>
+
+
+
+   	  <form  id="searchBoxForm" class="searchBoxForm" autocomplete="off" action="search_mosque/mosquesearch.php" method="get"> 
+
+
+
+        
+
+
+
+        <label for="keywordsInput">I'm looking for</label> 
+
+
+
+        	<input name="mosque" type="text" class="search-field" id="course" title='e.g East London Mosque or Whitechapel' value='' placeholder='e.g East London Mosque or Whitechapel'/>
+
+
+
+   	 		<button class="search-submit" type="submit">Search</button> <div class="hidden"> 
+
+
+
+        	<input name="page" type="hidden" value="1" />
+
+
+
+            <strong>Mosque Directory Enquiries Hotline:</strong> <span class="style1">07447441923</span> between 10:30 - 5:30</div>  
+
+
+
+         
+
+
+
+   
+
+
+
+
+
+
+
+      </form>
+
+
+
+<div align="center" style="font-size:12px;">
+
+
+
+
+
+
+
+      <script type="text/javascript"><!--
+
+
+
+google_ad_client = "pub-6980679811296255";
+
+
+
+/* 728x15, created 7/26/10 */
+
+
+
+google_ad_slot = "3644241053";
+
+
+
+google_ad_width = 728;
+
+
+
+google_ad_height = 15;
+
+
+
+//-->
+
+
+
+</script>
+
+
+
+<script type="text/javascript"
+
+
+
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+
+
+
+</script>  
+
+
+
+</div>      
+
+
+
+
+
+
+     
+
+
+
+        <div align="center">
+
+
+
+<style type="text/css">
+body div a {
+	font-weight: bold;
+}
+</style>
+ <div align="center">
+  <br/>
+
+
+
+
+     
+     <b>Chapter:</b> 2 <b>Sura: </b>76 </b><b>Verse:</b> <i>And when they meet those who believe they say, `We (too) have believed.' But when they go apart one with another they say, `Do you inform them (- the Muslims) what All&#226;h has d...</i> - <b><a class="example8" href="#">Read the Verse</a>/ The Holy Quran</b>  
+    <div style='display:none'>
+		<div id='inline_example1' style='padding:10px; background:#fff;'>
+		<h2>Chapter: 2 Sura: 76</h2>
+        <table width="100%" border="0" cellspacing="4" cellpadding="4">
+  <tr>
+    <td valign="top"><img src="img/quranquote.jpg" /></td>
+    <td><i>And when they meet those who believe they say, `We (too) have believed.' But when they go apart one with another they say, `Do you inform them (- the Muslims) what All&#226;h has disclosed to you, (- of the prophecies in your Scriptures about the Prophet), that they thereby availing themselves of it (- the Scriptures), may prevail upon you in argumentation on the authority of your Lord? Will you not, then, use your reasoning power?'</i></td>
+    <td></td>
+  </tr>
+</table>
+
+
+	  </div>
+</div>        
+         </div>     </div>
+
+
+<h2>London Mosques</h2>
+
+
+
+
+
+
+
+<table width="73%" border="0" cellpadding="5" cellspacing="5">
+
+
+
+  <tr>
+
+
+
+    <td width="17%"><img src="img/thumbs/160px-East_London_Mosque_Front_View.jpg" alt="East London Mosque, Tower Hamlets, East London, London, UK" name="East London Mosque, Tower Hamlets, East London, London, UK" width="145" height="145" border="1" title="East London Mosque, London Muslim Center, Maryam Centre" longdesc="Whitechapel, Tower Hamlets, East London, London, UK" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/london-central-moque.jpg" width="145" height="145" border="1" title="London Central Mosque, Regents Park Mosque, Baker Street Mosque, The Islamic Cultural Centre" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/North-London-Central-Mosque.jpg" width="145" height="145" border="1" title="North London Central Mosque (Islington, London)" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/harrow-central-mosque.jpg" width="145" height="145" border="1" title="Harrow Central Mosque (Harrow, London)" /></td>
+
+
+
+    <td width="21%"><img src="img/feature-mosques/wembley-central-mosque.jpg" width="145" height="145" border="1" title="Wembley Central Mosque (Brent, London)" /></td>
+
+
+
+  <td width="21%"><img src="img/feature-mosques/West-London-Islamic-Centre-and-Jamia-Masjid.jpg" width="145" height="145" border="1" title="West London Islamic Centre &amp; Jamia Masjid (Ealing, London)" /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/london/tower-hamlets/whitechapel/East-London-Mosque-&-London-Muslim-Centre-Whitechapel-Tower-Hamlets/310">East London Mosque </a> (<em>Tower Hamlets, London</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/london/westminster/regents-park/Islamic-Cultural-Centre-Baker-Street-Westminster/491">London Central Mosque</a><em> (Westminister, London</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/london/islington/finsbury-park/North-London-Central-Mosque-Finsbury-Park-Islington-London/1200">North London Central Mosque</a> (<em>Islington, London</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/london/harrow/wealdstone/Harrow-Central-Mosque-and-Masood-Islamic-Centre-Middlesex-Harrow/393">Harrow Central Mosque</a> (<em>Harrow, London</em>)</td>
+
+
+
+    <td align="center" valign="top">  <a href="mosques/england/london/brent/wembley/Wembley-Central-Masjid-Wembley-Brent-London/1484">Wembley Central Mosque</a> (<em>Brent, London</em>)</td>
+
+
+
+  <td align="center" valign="top"> <a href="mosques/england/london/ealing/west-ealing/West-London-Islamic-Centre-Jamia-Masjid-West-Ealing-Ealing-London/1491">West London Islamic Centre &amp; Jamia Masjid</a>  (<em>Ealing, London</em>)</td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td><img src="img/feature-mosques/masjid-ibraheem-newham.jpg" width="145" height="145" border="1" title="Masjid Ibraheem (Newham, London)" /></td>
+
+
+
+    <td><img src="img/feature-mosques/barking-mosque.jpg" width="145" height="145" border="1" title="Barking Muslims Association (Barking &amp; Dagenham, London)" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Shahjalal-Mosque-manor-park.JPG" width="145" height="145" border="1" title="Shahjalal Mosque (Newham, London)" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Aziziye-Mosque.jpg" width="145" height="145" border="1" title="Aziziye Mosque (Hackney, London)" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Masjid-e-Umer.jpg" width="145" height="145" border="1" title="Masjid e Umer (Walthamstow, London)" /></td>
+
+
+
+  <td><img src="img/feature-mosques/Hounslow-Jamia-Masjid-and-Islamic-Centre.jpg" width="145" height="145" border="1" title="Hounslow Jamia Masjid &amp; Islamic Centre (Hounslow, London)" /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/london/newham/plaistow/Masjid-Ibrahim-Plaistow-Newham-London/993">Masjid Ibraheem </a> (<em>Newham, London</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/london/barking-and-dagenham/abbey/Barking-Mosque-Barking-Barking-&-Dagenham/81">Barking Muslims Association</a> (<em>Barking &amp; Dagenham, London</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/london/newham/manor-park/Shah-Jalal-Mosque-Manor-Park-Newham-London/1303">Shahjalal Mosque</a> (<em>Newham, London</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/london/hackney/stoke-newington/Azizia-Mosque-Stoke-Newington-Hackney/142">Aziziye Mosque</a> (<em>Hackney, London</em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/london/waltham-forest/walthamstow/Masjid-e-Umer-Trust-Walthamstow-Waltham-Forest/1069">Masjid e Umer</a> (<em>Walthamstow, London</em>)</td>
+
+
+
+  <td align="center" valign="top"><a href="mosques/england/london/hounslow/hounslow-heath/Hounslow-Jamia-Masjid-&-Islamic-Centre-Middlesex-Hounslow/414">Hounslow Jamia Masjid &amp; Islamic Centre</a> (<em>Hounslow, London</em>)</td>
+
+
+
+  </tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h2>Birmingham Mosques</h2>
+
+
+
+<table width="73%" border="0" cellpadding="5" cellspacing="5">
+
+
+
+  <tr>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Birmingham_Central_Mosque.jpg" alt="East London Mosque, Tower Hamlets, East London, London, UK" width="145" height="145" border="1" title="Birmingham Central Mosque (Highgate, Birmingham)" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Ghamkol-Sharif-birmingham.jpg" width="145" height="145" border="1" title="Ghamkol Sharif (Small Heath , Birmingham)" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Madina-Mosque-Saltley-Birmingham.jpg" width="145" height="145" border="1" title="Madina Mosque (Saltley, Birmingham)" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Lozells-Central-Mosque.jpg" width="145" height="145" border="1" title="Lozells Central Mosque (Lozells, Birmingham)" /></td>
+
+
+
+    <td width="21%"><img src="img/feature-mosques/Hamza-Mosque-Islamic-Centre.jpg" width="145" height="145" border="1" title="Hamza Mosque Islamic Centre (Moseley, Birmingham)" /></td>
+
+
+
+    <td width="21%"><img src="img/feature-mosques/kings-heath-mosque.jpg" width="145" height="145" border="1" title="Kings Heath Mosque (Kings Heath , Birmingham)" /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/west-midlands/birmingham/balsall-heath/Birmingham-Central-Mosque-Highgate-Balsall-Heath-Birmingham/182">Birmingham Central Mosque</a><em> (Highgate, Birmingham</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/west-midlands/birmingham/small-heath/Central-Jamia-Mosque-Ghamkol-Sharif-Ghamkolvia-Small-Heath-Birmingham-Birmingham/222">Ghamkol Sharif</a> (<em>Small Heath , Birmingham</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/England/West-Midlands/birmingham/saltley/madina-mosque-saltley-birmingham/814">Madina Mosque</a> (<em>Saltley, Birmingham</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/west-midlands/birmingham/lozells/Faizul-Quran-Jamia-Masjid-Lozells-Lozells-Newtown-&-Birchfield-Birmingham/330">Lozells Central Mosque</a> (<em>Lozells, Birmingham</em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/west-midlands/birmingham/moseley/Masjid-e-Hamza-&-Islamic-Centre-Moseley-Moseley-&-Kings-Heath-Birmingham/1034">Hamza Mosque Islamic Centre</a> (<em>Moseley, Birmingham</em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="/">Kings Heath Mosque </a>(<em>Kings Heath , Birmingham</em>)</td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td><img src="img/feature-mosques/Green-Lane-Masjid-and-Community-Centre.jpg" width="145" height="145" border="1" title="Green Lane Masjid &amp; Community Centre (Small Heath, Birmingham)" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Witton-Islamic-Centre.jpg" width="145" height="145" border="1" title="Witton Islamic Centre (Aston, Birmingham)" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Hall-Green-Mosque.jpg" width="145" height="145" border="1" title="Hall Green Mosque (Hall Green , Birmingham)" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Masjid-As-Salafi.jpg" width="145" height="145" border="1" title="Masjid As-Salafi (Small Heath , Birmingham)" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Idaara-Maarif-e-Islam.jpg" width="145" height="145" border="1" title="Idaara Maarif-e-Islam (Small Heath , Birmingham)" /></td>
+
+
+
+    <td><img src="img/feature-mosques/al-hijra-mosque.jpg" width="145" height="145" border="1" title="Al Hijra Mosque (Small Heath , Birmingham)" /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/west-midlands/birmingham/small-heath/Green-Lane-Mosque-Small-Heath-Bordesley-Birmingham/911">Green Lane Masjid &amp; Community Centre</a> (<em>Small Heath, Birmingham</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/west-midlands/birmingham/aston/Witton-Islamic-Centre-Aston-Birmingham/1498">Witton Islamic Centre </a>(<em>Aston, Birmingham</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/west-midlands/birmingham/hall-green/Hall-Green-mosque-Hall-Green-Hall-Green-Birmingham/381">Hall Green Mosque </a>(<em>Hall Green , Birmingham</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/west-midlands/birmingham/small-heath/Masjid-as-Salafi-Small-Heath-Birmingham/969">Masjid As-Salafi</a> (<em>Small Heath , Birmingham</em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/west-midlands/birmingham/sparkbrook/Idara-Maarif-e-Islam-Hussainia-Mosque-and-Community-Centre-Sparkbrook-Small-Heath-Birmingham/430">Idaara Maarif-e-Islam</a> (<em>Small Heath , Birmingham</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/west-midlands/birmingham/small-heath/Al-Hijrah-Mosque-Small-Heath-Birmingham/60">Al Hijra Mosque </a>(<em>Small Heath , Birmingham</em>)</td>
+
+
+
+  </tr>
+
+
+
+</table>
+
+
+
+<h2> Leicester  Mosques</h2>
+
+
+
+<table width="73%" border="0" cellpadding="5" cellspacing="5">
+
+
+
+  <tr>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/masjid-umar-leicester.jpg" alt="East London Mosque, Tower Hamlets, East London, London, UK" width="145" height="145" border="1" title="Masjid Umar (Highgate, Leicester)" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Leicester-Central-Mosque.jpg" width="145" height="145" border="1" title="Leicester Central Mosque (City Center , Leicester)" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/jamme-mosque-leicester.jpg" width="145" height="145" border="1" title="Jame Mosque (North Evington , Leicester)" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Islamic-Dawah-Academy.jpg" width="145" height="145" border="1" title="Islamic Dawah Academy (City Center, Leicester)" /></td>
+
+
+
+    <td width="21%"><img src="img/feature-mosques/Masjid-Ul-Imam-Al-Bukhari.jpg" width="145" height="145" border="1" title="Masjid Ul Imam Al Bukhari (Moseley, Leicester)" /></td>
+
+
+
+    <td width="21%"><img src="img/feature-mosques/Uthmani-Masjid.jpg" width="145" height="145" border="1" title="Uthmani Masjid (Spinney Hills, Leicester)" /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/leicestershire-/leicester/evington/Masjid-Umar--Evington-Muslim-Centre-Evington-Leicester-Leicestershire/1010">Masjid Umar </a>(<em>Highgate, Leicester</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/leicestershire-/leicester/conduit-street/Leicester-Central-Mosque-Conduit-Street-Leicester/765">Leicester Central Mosque</a> (<em>City Center , Leicester</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/leicestershire-/leicester/north-evington/Jame-Mosque-Leicester-Leicestershire/650">Jame Mosque</a> (<em>North Evington , Leicester</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/leicestershire-/leicester/leicester-central/Masjid-al-Farooq-Leicester-Leicestershire/1017">Islamic Dawah Academy</a> (<em>City Center, </em><em>Leicester</em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/leicestershire-/leicester/belgrave/Masjid-Ul-Imam-Al-Bukhari-Leicester-Leicestershire/935">Masjid Ul Imam Al Bukhari</a> (<em>Moseley, Leicester</em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/leicestershire-/leicester/spinney-hills/Uthmani-Masjid-Spinney-Hills-Leicester-Leicestershire/1471">Uthmani Masjid</a> (<em>Spinney Hills, Leicester</em>)</td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td><img src="img/feature-mosques/Masjid-al-Falah.jpg" width="145" height="145" border="1" title="Masjid al Falah (City Center, Leicester)" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Masjid-e-Abu-Bakr.jpg" width="145" height="145" border="1" title="Masjid-e-Abu Bakr (Westcotes, Leicester)" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Masjid-At-Taqwa.jpg" width="145" height="145" border="1" title="Masjid At Taqwa (Charnwood , Leicester)" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Madressa-E-Rahimiyah.jpg" width="145" height="145" border="1" title="Madressa-E-Rahimiyah (Spinney Hills, Birmingham)" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Masjid-Ali-Trust.jpg" width="145" height="145" border="1" title="Masjid Ali Trust (Coleman, Birmingham)" /></td>
+
+
+
+    <td><img src="img/feature-mosques/masjid-al-huda.jpg" width="145" height="145" border="1" title="Masjid Al Huda (Charnwood, Birmingham)" /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/leicestershire-/leicester/leicester-central/Masjid-al-Falah-&-Islamic-Educational-Trust-Leicester-Leicestershire/936">Masjid al Falah</a> (<em>City Center, Leicester</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/leicestershire-/leicester/north-evington/Masjid-e-Abu-Bakr-Leicester-Leicestershire/1023">Masjid-e-Abu Bakr</a> (<em>Westcotes, </em><em>Leicester</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/leicestershire-/leicester/north-evington/Masjid-at-Taqwa-Leicester-Leicestershire/972">Masjid At Taqwa</a> (<em>Charnwood , </em><em>Leicester</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/leicestershire-/leicester/north-evington/Madressah-e-Rahimiyah-Leicester-Leicestershire/862">Madressa-E-Rahimiyah</a> (<em>Spinney Hills, Birmingham</em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/leicestershire-/leicester/north-evington/Masjid-Ali-Trust-Leicester-Leicestershire/957">Masjid Ali Trust</a> (<em>Coleman, Birmingham</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/leicestershire-/leicester/frog-island/Masjid-Al-Huda-Leicester-Leicestershire/940">Masjid Al Huda</a> (<em>Charnwood, Birmingham</em>)</td>
+
+
+
+  </tr>
+
+
+
+</table>
+
+
+
+<h2>Bradford Mosques</h2>
+
+
+
+<table width="73%" border="0" cellpadding="5" cellspacing="5">
+
+
+
+  <tr>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Madni-Jamia-Masjid.jpg" alt="East London Mosque, Tower Hamlets, East London, London, UK" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Grand-Mosque-Horton-Park.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Tablighul-Islam-Jame-Mosque.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Lidgett-Green-Mosque.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="21%"><img src="img/feature-mosques/Jamia-Mosque-Tabligh-ul-Islam.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="21%"><img src="img/feature-mosques/Jamia-Masjid-Tabligh-ul-Islam.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/west-yorkshire/bradford/thornbury/Madni-Jamia-Masjid-Thornbury-Bradford-West-Yorkshire/823">Madni Jamia Masjid</a> (<em>Thornbury, Bradford</em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/west-yorkshire/bradford/little-horton/Suffa-tul-Islam-Central-Masjid-Little-Horton-Bradford-West-Yorkshire/2818">Grand Mosque Horton Park</a>  (<em>Horton Park, </em><em>Bradford</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/west-yorkshire/bradford/lidget-green/Tablighul-Islam-Jame-Mosque-Bradford-West-Yorkshire/1363">Tablighul Islam Jame Mosque</a> (<em>Lidgett Green, Bradford</em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/west-yorkshire/bradford/lidgett-green/Jamiyat-Tabligh-ul-Islam-Lidgett-Green-Bradford-West-Yorkshire/698">Lidgett Green Mosque</a> (<em>Lidgett Green, Bradford </em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/west-yorkshire/bradford/manningham/Jamiat-Tablighul-Islam-Bradford-West-Yorkshire/684">Jamia Mosque Tabligh-ul-Islam</a> (<em>Manningham, Bradford </em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/west-yorkshire/bradford/bradford-central/Jamia-Masjid-Tabligh-ul-Islam-Bradford-West-Yorkshire/641">Jamia Masjid Tabligh-ul-Islam</a> (<em>Spinney Hills, Leicester</em>)</td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td><img src="img/feature-mosques/Tawakkuliah-Jami-Masjid.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/usmania-mosque.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/byron-street-mosque.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Dawat-e-Islami-Faizan-e-Madinah.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Jamiyat-Tabligh-ul-Islam-Mosque.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Masjid-Noorul-Islam.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/west-yorkshire/bradford/manningham/TawakKulia-Mosque-Bradford-West-Yorkshire/1369">TawakKulia Mosque</a> (<em>Manningham, </em><em>Bradford</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/west-yorkshire/bradford/heaton/Jamia-Usmania-Heaton-Bradford-West-Yorkshire/3263">Usmania Mosque</a> (<em>Heaton, </em><em>Bradford</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/west-yorkshire/bradford/queensbury/UK-Islamic-Mission-Bradford-Mosque-Queensbury-Bradford-West-Yorkshire/1440">Bradford Byron Street Mosque</a> (<em>Queensbury, </em><em>Bradford</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/west-yorkshire/bradford/central-bradford/Dawat-e-Islami-Faizan-e-Madinah-Bradford-West-Yorkshire/292">Dawat-e-Islami Faizan-e-Madinah</a> (<em>Queensbury, </em><em>Bradford</em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/west-yorkshire/bradford/westgate/Jamiyat-Tabligh-ul-Islam-Mosque-Westgate-Bradford-West-Yorkshire/705">Jamiyat Tabligh-ul-islam Central Mosque</a> (<em>Westgate, Bradford</em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/west-yorkshire/bradford/great-horton/Noor-ul-Islam-Mosque-Great-Horton-Bradford-West-Yorkshire/1194">Masjid Noorul Islam</a>  (<em>Great Horton, </em><em>Bradford</em>)</td>
+
+
+
+  </tr>
+
+
+
+</table>
+
+
+
+<h2>Manchester Mosques</h2>
+
+
+
+<table width="73%" border="0" cellpadding="5" cellspacing="5">
+
+
+
+  <tr>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Manchester-Central-Mosque.jpg" alt="East London Mosque, Tower Hamlets, East London, London, UK" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Didsbury-Mosque.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Khizra-Masjid.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Shahjalal-Mosque-and-Islamic-Centre.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="21%"><img src="img/feature-mosques/Al-Furqan-Masjid.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="21%"><img src="img/feature-mosques/Makki-Masjid.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td align="center" valign="top"> <a href="/">Manchester Central Mosque</a> (<em>Victoria Park, Manchester</em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/manchester/didsbury/west-didsbury/Didsbury-Mosque-and-Islamic-Centre-West-Didsbury-Manchester/298">Didsbury Mosque</a> (<em>Didsbury, Manchester</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/manchester/cheetham-hill/higher-broughton/UKIM--Markazi-Jamia-Masjid-Khizra-Cheetham-Hill-Manchester/1451">Khizra Masjid</a> (<em>Cheetham Hill, Manchester</em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/manchester/rusholme/rusholme-central/Shahjalal-Mosque-&-Islamic-Centre-Rusholme-Manchester/1307">Shahjalal Mosque &amp; Islamic Centre</a> (<em>Rusholme, Manchester</em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/manchester/rusholme/great-southern-street/Al-Furqan-Masjid-Rusholme-Manchester/24">Al Furqan Masjid</a> (<em>Rusholme, Manchester</em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/manchester/longsight/longsight-central/Makki-Masjid-Longsight-Manchester/873">Makki Masjid &amp; Islamic Centre</a> (<em>Longsight, Manchester</em>)</td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td><img src="img/feature-mosques/Madina-Mosque-manchester.jpg" alt="Madina Mosque (Levenshulme, Manchester)" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Muslim-Youth-Foundation.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Jamia-Masjid-North-Manchester.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Eccles-&-Salford-Islamic-Mosque.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Jameah-Masjid-e-Noor.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/AMICA.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/manchester/levenshulme/levenshulme-central/UK-Islamic-Mission--Madina-Masjid-Levenshulme-Manchester/1437">Madina Mosque</a> (<em>Levenshulme, Manchester</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/manchester/central-manchester/manchester-central/Muslim-Youth-Foundation-Central-Manchester-Manchester/1165">Muslim Youth Foundation</a> (<em>City Center, Manchester</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/manchester/cheetham-hill/broughton/Jamia-Masjid-North-Manchester-Cheetham-Hill-Manchester/649">Jamia Masjid North Manchester</a> (<em>Cheetham Hill, </em><em>Manchester</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/manchester/eccles/eccles/Eccles-&-Salford-Islamic-Mosque-Eccles-Manchester/314">Eccles &amp; Salford Islamic Mosque</a> (<em>Eccles, Manchester</em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/manchester/old-trafford/stamford-street/Jame-Masjid-e-Noor-Old-Trafford-Manchester/564">Jamea'h Masjid-e-Noor</a> (<em>Trafford, Manchester</em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/manchester/whalley-range/moss-side/Arrahman-Manchester-Islamic-Cultural-Association/3316">Arrahman Manchester Islamic Cultural Association</a> (<em>Whalley Range, </em><em>Manchester</em>)</td>
+
+
+
+  </tr>
+
+
+
+</table>
+
+
+
+<h2>Leeds Mosques</h2>
+
+
+
+<table width="73%" border="0" cellpadding="5" cellspacing="5">
+
+
+
+  <tr>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Leeds-Grand-Mosque2.jpg" alt="East London Mosque, Tower Hamlets, East London, London, UK" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/makka-masjid.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Leeds-Islamic-Centre.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Makki-Masjid-and-Madressa.jpg" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="21%"><img src="img/feature-mosques/Shahjalal-Jamia-Masjid-Leeds.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="21%"><img src="img/feature-mosques/AhlulBayt-Cultural-Centre-Leeds.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/west-yorkshire/leeds/burley/Leeds-Grand-Mosque-Leeds-West-Yorkshire/760">Leeds Grand Mosque</a> (<em>Woodhouse, Leeds </em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/west-yorkshire/leeds/burley-park/Makkah-Jamia-Masjid-Leeds-West-Yorkshire/867">Leeds Makkah Masjid</a> (<em>Headingley, Leeds </em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/west-yorkshire/leeds/gledhow/Leeds-Islamic-Centre-Leeds-West-Yorkshire/761">Leeds Central Mosque </a> (<em>Chapel Allerton, Leeds</em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/west-yorkshire/leeds/burley/Makki-Masjid-and-Madressa-Leeds-West-Yorkshire/877">Makki Masjid and Madressa</a> (<em>Weetwood, Leeds</em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/west-yorkshire/leeds/gledhow/Masjid-e-Shah-Jalal-Leeds-West-Yorkshire/1060">Shahjalal Jamia Masjid Leeds</a> (<em>Gipton, Leeds</em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/west-yorkshire/leeds/central-leeds/Ahlul-Bayt-Islamic-Centre-Leeds-West-Yorkshire/15">AhlulBayt Cultural Centre</a> (<em>Woodhouse, Leeds </em>)</td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td><img src="img/feature-mosques/Lincoln-Green-Mosque.jpg" alt="Madina Mosque (Levenshulme, Manchester)" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/bilal-masjid-leeds.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/IQRA-Centre%20LEEDS.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Jamia-tul-batool.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Jamia-Masjid-Abu-Huraira.jpg" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/green-room-mens.jpg" width="145" height="145" border="1" /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/west-yorkshire/leeds/central-leeds/Lincoln-Green-Mosque-Leeds-West-Yorkshire/3058">Lincoln Green Mosque</a> (<em>Hunslet, Leeds </em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/west-yorkshire/leeds/gledhow/Markazi-Jamia-Masjid-Bilal-Leeds-West-Yorkshire/898">Bilal Masjid</a>  (<em>Gipton, Leeds</em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/west-yorkshire/leeds/moortown/UKIM--Iqra-Centre-Moortown-Leeds/1443">Iqra Centre</a> (<em>Moortown, Leeds</em>)</td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/west-yorkshire/leeds/harehills/Jamia-Tul-Batool-Harehills-Leeds/674">Jamia-tul-batool</a>  (<em>Beeston, Leeds</em>)</td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/west-yorkshire/leeds/beeston/Jamia-Masjid-Abu-Huraira-Beeston-Leeds-West-Yorkshire/608">Jamia Masjid Abu Huraira</a> (<em>Beeston, Leeds</em>) </td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/west-yorkshire/leeds/hyde-park/Leeds-University-Union-Islamic-Society-Leeds-West-Yorkshire/764">Leeds University Union Islamic Society Green Room</a> (Hyde Park, <em>Leeds</em>) </td>
+
+
+
+  </tr>
+
+
+
+</table>
+
+
+
+<h2>Sheffield Mosques</h2>
+
+
+
+<table width="73%" border="0" cellpadding="5" cellspacing="5">
+
+
+
+  <tr>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/sheffield-masjid-jamia-mosque.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Sheffield-Markazi-Jamia-Mosque.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/sheffield-Makki-Jamia-Masjid.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Sheffield-Sunnah-Mosque.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="21%"><img src="img/feature-mosques/sheffield-Madina-Masjid.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="21%"><img src="img/feature-mosques/Sheffield-Jamia-Masjid-Ghausia-Mosque.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/south-yorkshire/sheffield/nether-edge/Jamia-Masjid-and-Usmania-Education-Centre-Sheffield-South-Yorkshire/613">Jamia Masjid</a> (<em>Nether Edge, Sheffield</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/south-yorkshire/sheffield/darnall/Markazi-Mosque-&-Islamic-Centre-Darnall-Sheffield-South-Yorkshire/915">Markazi Jamia Mosque</a> (<em>Darnall, Sheffield</em>) </td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/south-yorkshire/sheffield/heeley/Makki-Jamia-Masjid-Heeley-Sheffield-South-Yorkshire/869">Makki Jamia Masjid</a> (<em>Heeley, Sheffield</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/south-yorkshire/sheffield/burngreave/Masjid-Sunnah-Sheffield-Burngreave-Sheffield/3136">Sunnah Mosque</a> (<em>Burngreave</em>, <em>Sheffield</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/south-yorkshire/sheffield/heeley/Sheffield-Islamic-Centre-and-Madina-Masjid-Sheffield-South-Yorkshire/1318">Sheffield Islamic Centre</a> (<em>Heeley, Sheffield</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/south-yorkshire/sheffield/grimesthorpe/Jamia-Mosque-Ghausia-Sheffield-South-Yorkshire/655">Jamia Mosque Ghausia</a> (<em>Grimesthorpe, Sheffield</em>) </td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td><img src="img/feature-mosques/sheffield-Al-Huda-Masjid.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Sheffield-Muslim-Welfare-House.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/sheffield-The-Message-Islamic-Information-Centre.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/sheffield-Masjid-Umar.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/sheffield-Anjuman-E-Haideria.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Sheffield-Bait-ul-Mukarram-Jamia-Mosque.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/south-yorkshire/sheffield/broomhall/Al-Huda-Masjid-and-Broomhall-Muslim-Islamic-Community-Centre/3185">Al Huda Masjid</a>  (<em>Broomhall, Sheffield</em>) </td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/south-yorkshire/sheffield/broomhill/Muslim-Welfare-House-Broomhill-Sheffield-South-Yorkshire/1161">Muslim Welfare House</a> (<em>Broomhill, Sheffield</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/south-yorkshire/sheffield/bumgreave/The-Message-Islamic-Information-Centre-Sheffield-South-Yorkshire/127">The Message Islamic Information Centre</a> (<em>Walkley, Sheffield</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/England/South-Yorkshire/sheffield/burngreave/masjid-umar-burngreave-sheffield-south-yorkshire/2277">Masjid Umar</a> (<em>Burngreave, Sheffield</em>) </td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/south-yorkshire/sheffield/heeley/Anjuman-E-Haideria-Highfields-Sheffield-South-Yorkshire/103">Anjuman E Haideria</a> (<em>Highfields, Sheffield</em>) </td>
+
+
+
+    <td align="center" valign="top"><a href="mosques/england/south-yorkshire/sheffield/sharrow/Bait-ul-Mukarram-Jamia-Mosque-Sharrow-Sheffield-South-Yorkshire/145">Bait-ul-Mukarram Jamia Mosque</a> (<em>Sharrow, Sheffield</em>) </td>
+
+
+
+  </tr>
+
+
+
+</table>
+
+
+
+<h2>Glasgow Mosques</h2>
+
+
+
+<table width="73%" border="0" cellpadding="5" cellspacing="5">
+
+
+
+  <tr>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Glasgow-Central-Mosque.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Al-Furqan-Mosque-Glasgow.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Madrassa-Al-Arabia-Islamia-Isha.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Minhaj-Ul-Quran-glasgow.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="21%"><img src="img/feature-mosques/Madrasah-Al-Farooq-Glasgow.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="21%"><img src="img/feature-mosques/Marhaba-Welcome-Centre-glasgow.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/scotland/lanarkshire/glasgow/gorbals/Glasgow-Islamic-Centre-and-Central-Mosque-Gorbals-Glasgow/362">Glasgow Central Mosque</a> (<em>Gorbals,
+
+
+
+
+
+
+
+Glasgow</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/scotland/lanarkshire/glasgow/hillhead/Al-Furqan-Islamic-Centre-Hillhead-Glasgow/25">Al-Furqan Mosque</a> (<em>Hillhead, Glasgow</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/scotland/lanarkshire/glasgow/ibrox/Madrassa-Al-Arabia-Islamia-Ibrox-Glasgow/934">Madrassa Al Arabia Islamia</a> (<em>Ibrox, Glasgow</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/scotland/lanarkshire/glasgow/rutherglen/Minhaj-ul-Quran-International-Rutherglen-South-Lanarkshire-Glasgow/1092">Minhaj-Ul-Quran</a> (<em>Rutherglen, Glasgow</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/scotland/lanarkshire/glasgow/crosshill/Masjid-Al-Farooq-Crosshill-Glasgow/949">Madrasah Al-Farooq</a> (<em>Crosshill, Glasgow</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/scotland/lanarkshire/glasgow/whiteinch/Marhaba-Welcome-Centre-Whiteinch-Glasgow-Lanarkshire/2785">Marhaba Welcome Centre</a> (<em>Whiteinch, Glasgow</em>) </td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td><img src="img/feature-mosques/Masjid-Madrassa-Taleem-ul-Islam.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Jamia-Islamia-Glasgow.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Iqra-Learning-Centre-glasgow.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Lanarkshire-Central-Mosque.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Masjid-Noor-Glasgow.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Airdrie-Islamic-Centre.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/scotland/lanarkshire/glasgow/pollokshields/Masjid-Madrassa-Taleem-ul-Islam/849">Masjid Madrassa Taleem ul Islam</a> (<em>Pollokshields, Glasgow</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/scotland/lanarkshire/glasgow/shawlands/Jamia-Islamia-Shawlands-Glasgow/590">Jamia Islamia</a> (<em>Shawlands, Glasgow</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/scotland/lanarkshire/glasgow/barrhead/Iqra-Learning-Centre-Barrhead-Glasgow-Strathclyde/3194">Iqra Learning Centre</a> (<em>West Hurlet House, Glasgow</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/scotland/lanarkshire/motherwell/belshill/Central-Mosque-Lanarkshire-Mossend-Belshill-Motherwell-Lanarkshire/229">Lanarkshire Central Mosque</a> (<em>Motherwell,
+
+
+
+
+
+
+
+Lanarkshire</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/scotland/lanarkshire/glasgow/pollokshields/Masjid-Noor-Pollokshields-Glasgow/999">Masjid Noor</a> (<em>Pollokshields, Glasgow</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/scotland/lanarkshire/airdrie/coatdyke/Airdrie-and-Coatbridge-Islamic-Centre-Airdrie-Lanarkshire/2782">Airdrie Islamic Centre</a> (<em>Airdrie, Glasgow</em>) </td>
+
+
+
+  </tr>
+
+
+
+</table>
+
+
+
+<h2>Blackburn Mosques</h2>
+
+
+
+<table width="73%" border="0" cellpadding="5" cellspacing="5">
+
+
+
+  <tr>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Central-Mosque-of-Blackburn.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Masjid-E-Anisul-Islam.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Masjid-e-Raza.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Masjid-E-Noorul-Islam.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="21%"><img src="img/feature-mosques/Jamia-Ghosia-Mosque.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="21%"><img src="img/feature-mosques/Hidayatul-Banat-blackburn.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/lancashire/blackburn/blackburn-central/Central-Mosque-of-Blackburn/497">Central Mosque of Blackburn </a> (<em>Audley, Blackburn</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/lancashire/blackburn/blackburn-central/Masjid-e-Anisul-Islam-Blackburn-Lancashire/1026">Masjid-E-Anisul Islam</a> (<em>Bastwell, Blackburn</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/lancashire/blackburn/central-blackburn/Masjid-e-Raza-Blackburn-Lancashire/383">Masjid-E-Raza</a> (<em>Shear Brow, Blackburn</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/lancashire/blackburn/blackburn-central/Masjid-e-Noorul-Islam-Blackburn-Lancashire/1052">Masjid E Noorul Islam</a> (<em>Audley, Blackburn</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/lancashire/blackburn/blackburn-central/Jamia-Ghosia-Mosque-Blackburn-Lancashire/585">Jamia Ghosia Mosque</a> (<em>Audley, Blackburn</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/lancashire/blackburn/blackburn-central/Hidayatul-Banat-Blackburn-Lancashire/1378">Hidayatul Banat</a> (<em>Bastwell, Blackburn</em>) </td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td><img src="img/feature-mosques/Mohaddis-e-Azam-Education.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Makki-Masjid-Mosque-blackburn.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Masjid-e-Zainabia.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Al-Madat-Madrasah.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Islamic-Religious-Centre-blackburn.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Darussalam-Education-Centre-blackburn.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/lancashire/blackburn/st-johns/Mohaddis-e-Azam-Education/1118">Mohaddis-E-Azam Mission Education Centre</a> (<em>Shear Brow, Blackburn</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/lancashire/blackburn/blackburn-central/Makki-Masjid-Mosque-Blackburn-Lancashire/871">Makki Masjid Mosque</a> (<em>Bastwell, Blackburn</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/lancashire/blackburn/blackburn-central/Masjid-e-Zainabia-Blackburn-Lancashire/1073">Masjid-e-Zainabia</a> (<em>Bastwell , Blackburn</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/lancashire/blackburn/central-blackburn/Al-Madat-Madrasah-Blackburn-Lancashire/32">Al Madat Madrasah</a> (<em>Queen's Park, Blackburn</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/lancashire/blackburn/corporation-park/Islamic-Religious-Centre/3325">Islamic Religious Centre</a> (<em>Corporation Park, Blackburn</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/lancashire/blackburn/blackburn-central/Darussalam-Education-Centre-Blackburn-Lancashire/838">Darussalam Education Centre</a> (<em>Bastwell, Blackburn</em>) </td>
+
+
+
+  </tr>
+
+
+
+</table>
+
+
+
+<h2>Bristol Mosques</h2>
+
+
+
+<table width="73%" border="0" cellpadding="5" cellspacing="5">
+
+
+
+  <tr>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/masjid-albaseera-bristol.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Shah-Jalal-Jame-Mosque-Bristol.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Easton-Jamia-Masjid-Bristol.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Bristol-Jamia-Mosque.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Easton-Islami-Darasgah-Bristol.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Islami-Darasgah-Bristol.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/avon-and-somerset/bristol/st-judes/Masjid-Albaseera-St-Judes-Bristol/947">Albaseera Bristol Centre</a> (<em>St Judes, Bristol</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/avon-and-somerset/bristol/easton/Shah-Jalal-Jame-Mosque-Easton-Bristol/1289">Shah Jalal Jame Mosque</a> (<em>Easton, 
+
+
+
+
+
+
+
+Bristol</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/avon-and-somerset/bristol/easton/Easton-Jamia-Masjid-Easton-Bristol/313">Easton Jamia Masjid</a> (<em>Easton, Bristol</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/avon-and-somerset/bristol/bishopston/The-Bristol-Jamia-Mosque-Totterdown-City-of-Bristol/199">The Bristol Jamia Mosque</a> (<em>Totterdown, Bristol</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/avon-and-somerset/bristol/easton/Easton-Islami-Darasgah-Bristol/3328">Easton Islami Darasgah</a> (<em>Easton, Bristol</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/avon-and-somerset/bristol/montpelier/Islami-Darasgah-Bristol-Montpelier-City-of-Bristol/458">Islami Darasgah Bristol</a>  (<em>Montpelier, Bristol</em>) </td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td><img src="img/feature-mosques/Tawfiq-Masjid-And-Centre.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Madani-Jamia-Masjid-bristol.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Hosseinieh-Foundation-Bristol.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/quran-academy-bristol.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/bristol-somali-centre.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td><img src="img/feature-mosques/Bristol-Central-Mosque-Bristol.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/avon-and-somerset/bristol/bristol/Tawfiq-Masjid-and-Centre-City-of-Bristol-Bristol/3135">Tawfiq Masjid And Centre</a> (<em>Lawrence Hill,
+
+
+
+
+
+
+
+Bristol</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/avon-and-somerset/bristol/fishponds/Madani-Jamia-Masjid-Fishponds-Bristol/776">Madani Jamia Masjid</a> (<em>Fishponds, Bristol</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/avon-and-somerset/bristol/eastville/Darul-Imaan-Hosseinieh-Foundation-Eastville-Bristol/2934">Darul-Imaan Hosseinieh Foundation</a> (<em>Eastville,
+
+
+
+
+
+
+
+Bristol</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/avon-and-somerset/winchester/fishponds/Quran-Academy-Bristol-Fishponds-Bristol-Avon-&-Somerset/2797">Quran Academy Bristol</a> (<em>Fishponds, Bristol</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/avon-and-somerset/bristol/easton/Masjid-Alhuda-Easton-Bristol/954">Bristol Somali Centre / Masjid AlHuda</a> (<em>Easton,
+
+
+
+
+
+
+
+Bristol</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/england/avon-and-somerset/bristol/easton/Bristol-Central-Mosque-Easton-Bristol/198">Bristol Central Mosque</a> (<em>Easton, Bristol</em>) </td>
+
+
+
+  </tr>
+
+
+
+</table>
+
+
+
+<h2>Edinburgh Mosques</h2>
+
+
+
+<table width="73%" border="0" cellpadding="5" cellspacing="5">
+
+
+
+  <tr>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Edinburgh-Central-Mosque.jpg" width="145" height="145" border="1" title="Edinburgh Central Mosque, Central Mosque &amp; Islamic Centre, King Fahd Mosque" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Blackhall-Mosque.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/IQRA-ACADEMY.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Mosque-&-Islamic-Centre.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/Annandale-Street-Mosque.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+    <td width="17%"><img src="img/feature-mosques/The-Mosque-Kitchen.jpg" alt="" width="145" height="145" border="1" /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/scotland/lothian/edinburgh/southside-newington/Edinburgh-Central-Mosque-Edinburgh-Scotland/225">Edinburgh Central Mosque</a> (<em>Newington, Edinburgh</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/scotland/lothian/edinburgh/inverleith/Blackhall-Mosque-Inverleith-Edinburgh-Lothian/924">Blackhall Mosque</a> (<em>Inverleith, Edinburgh</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/scotland/lothian/edinburgh/newington/IQRA-ACADEMY-Newington-Edinburgh/2961">Iqra Academy Edinburgh</a> (<em>Newington, Edinburgh</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/scotland/lothian/edinburgh/southside-newington/Mosque-And-Islamic-Community-Centre-Edinburgh-Lothian/1111">Mosque &amp; Islamic Centre</a> (<em>Newington, Edinburgh</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/scotland/lothian/edinburgh/edinburgh-central/Annandale-Street-Mosque-Edinburgh-Lothian/1221">Annandale Street Mosque</a> (<em>Leith Walk</em>, <em>Edinburgh</em>) </td>
+
+
+
+    <td align="center" valign="top"> <a href="mosques/scotland/lothian/edinburgh/southside-newington/The-Mosque-Kitchen-Edinburgh-Scotland/225">The Mosque Kitchen</a> (Newington, <em>Edinburgh</em>) </td>
+
+
+
+  </tr>
+
+
+
+</table>
+
+
+
+<br/>
+
+
+
+
+
+
+<h2>Newham Mosques, London</h2>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+<tr valign='top'>
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque6871849992.jpg" alt="Riverine Centre, Masjid Ilyas, Markaz (Stratford, Newham, London)"  width="145" height="145" border="1" title="Riverine Centre, Masjid Ilyas, Markaz (Stratford, Newham, London) Masjid-e-Ilyas, Markaz Europe, Anjuman-e-Islahul Muslimeen, Markaz, Masjid Ilyas, Abbey Mills Mosque"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/stratford/Riverine-Centre-Masjid-Ilyas-Markaz-Stratford-Newham-London/1">Riverine Centre, Masjid Ilyas, Markaz</a> <em>(Stratford, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque9883156339.jpg" alt="Minhaj-ul-Quran Educational Centre (Forest Gate, Newham)"  width="145" height="145" border="1" title="Minhaj-ul-Quran Educational Centre (Forest Gate, Newham) Muslim Youth League, Adara or Idara Minhaj-ul-Quran Educational Centre"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/forest-gate/Minhaj-ul-Quran-Educational-Centre-Forest-Gate-Newham/11">Minhaj-ul-Quran Educational Centre</a> <em>(Forest Gate, Newham)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque6432241257.jpg" alt="Al Habib Jamia Masjid (Canning Town, Newham, London)"  width="145" height="145" border="1" title="Al Habib Jamia Masjid (Canning Town, Newham, London) Canning Town Muslim Trust, Canning Town Muslim Welfare Association, Islamic Centre - Canning Town, Muslim Community Centre & Mosque"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/canning-town/Al-Habib-Jamia-Masjid-Canning-Town-Newham-London/26">Al Habib Jamia Masjid</a> <em>(Canning Town, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque1685942290.jpg" alt="Al-Hira Masjid and Educational Centre (Upton Park, Newham)"  width="145" height="145" border="1" title="Al-Hira Masjid and Educational Centre (Upton Park, Newham) Al-Hira Education Centre, Bright Start Nursery"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/upton-park/Al-Hira-Masjid-and-Educational-Centre-Upton-Park-Newham/64">Al-Hira Masjid and Educational Centre</a> <em>(Upton Park, Newham)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque4761544950.jpg" alt="Al-Karam Mosque (Forest Gate, Newham)"  width="145" height="145" border="1" title="Al-Karam Mosque (Forest Gate, Newham) Al-Karam Mosque, &#1575;&#1604;&#1705;&#1585;&#1605; &#1605;&#1587;&#1580;&#1583;"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/forest-gate/Al-Karam-Mosque-Forest-Gate-Newham/74">Al-Karam Mosque</a> <em>(Forest Gate, Newham)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque7222501644.jpg" alt="Azhar Masjid Mosque (Forest Gate, Newham)"  width="145" height="145" border="1" title="Azhar Masjid Mosque (Forest Gate, Newham) Azhar Academy, Azhar Academy Girls School, Forest Gate Mosque, Girls School"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/forest-gate/Azhar-Masjid-Mosque-Forest-Gate-Newham/141">Azhar Masjid Mosque</a> <em>(Forest Gate, Newham)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 </tr>
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque665979892.jpg" alt="Church Road Masjid (Manor Park, Newham)"  width="145" height="145" border="1" title="Church Road Masjid (Manor Park, Newham) "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/manor-park/Church-Road-Masjid-Manor-Park-Newham/243">Church Road Masjid</a> <em>(Manor Park, Newham)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque6227702633.jpg" alt="Darus Salaam (Manor Park, Newham)"  width="145" height="145" border="1" title="Darus Salaam (Manor Park, Newham) Newham IFE, Islamic Forum of Europe, Peace Home Learning Centre, Mosque, Madrassah and Welfare Centre, House of Peace"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/manor-park/Darus-Salaam-Manor-Park-Newham/285">Darus Salaam</a> <em>(Manor Park, Newham)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque644611530.jpg" alt="East End Islamic Centre (Upton Park, Newham)"  width="145" height="145" border="1" title="East End Islamic Centre (Upton Park, Newham) "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/upton-park/East-End-Islamic-Centre-Upton-Park-Newham/309">East End Islamic Centre</a> <em>(Upton Park, Newham)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque6638071811.jpg" alt="Forest Gate Mosque (Forest Gate, Newham)"  width="145" height="145" border="1" title="Forest Gate Mosque (Forest Gate, Newham) Imam Zakariyah Academy Primary School, The Bangladesh Muslim Shomity Ltd"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/forest-gate/Forest-Gate-Mosque-Forest-Gate-Newham/339">Forest Gate Mosque</a> <em>(Forest Gate, Newham)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque6624182560.jpg" alt="Imamia Islamic Mission (Forest Gate, Newham)"  width="145" height="145" border="1" title="Imamia Islamic Mission (Forest Gate, Newham) Bab Ul ilm School"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/forest-gate/Imamia-Islamic-Mission-Forest-Gate-Newham/446">Imamia Islamic Mission</a> <em>(Forest Gate, Newham)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque7629105676.jpg" alt="International Khatme-Nabuwat Movement (Forest Gate, Newham)"  width="145" height="145" border="1" title="International Khatme-Nabuwat Movement (Forest Gate, Newham) Darul-Uloom London, Masjid-E-Noor"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/forest-gate/International-Khatme-Nabuwat-Movement-Forest-Gate-Newham/450">International Khatme-Nabuwat Movement</a> <em>(Forest Gate, Newham)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 </tr>
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque9094340708.jpg" alt="East Ham Bangladeshi Islamic Community Trust (East Ham, Newham, London)"  width="145" height="145" border="1" title="East Ham Bangladeshi Islamic Community Trust (East Ham, Newham, London) "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/east-ham/East-Ham-Bangladeshi-Islamic-Community-Trust-East-Ham-Newham-London/2749">East Ham Bangladeshi Islamic Community Trust</a> <em>(East Ham, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque3906841571.jpg" alt="Islamic Centre Upton Park (Upton Park, Newham)"  width="145" height="145" border="1" title="Islamic Centre Upton Park (Upton Park, Newham) Selwyn Mosque, Selwyn Road Masjid, Islamic Centre"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/upton-park/Islamic-Centre-Upton-Park-Upton-Park-Newham/485">Islamic Centre Upton Park</a> <em>(Upton Park, Newham)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque6672297236.jpg" alt="Islamic Dawah Centre (Manor Park, Newham)"  width="145" height="145" border="1" title="Islamic Dawah Centre (Manor Park, Newham) "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/manor-park/Islamic-Dawah-Centre-Manor-Park-Newham/505">Islamic Dawah Centre</a> <em>(Manor Park, Newham)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque6881855023.jpg" alt="Jamia Darus Sunnah (Forest Gate, Newham)"  width="145" height="145" border="1" title="Jamia Darus Sunnah (Forest Gate, Newham) Jamia Darus Sunnah London"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/forest-gate/Jamia-Darus-Sunnah-Forest-Gate-Newham/582">Jamia Darus Sunnah</a> <em>(Forest Gate, Newham)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque4265626883.jpg" alt="Jamia Masjid Mohi-ul-Islam Siddiquia (East Ham, Newham)"  width="145" height="145" border="1" title="Jamia Masjid Mohi-ul-Islam Siddiquia (East Ham, Newham) Jamia Islamia Siddiquia Mosque, Mohi-ud-Din Education Centre"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/east-ham/Jamia-Masjid-Mohi-ul-Islam-Siddiquia-East-Ham-Newham/646">Jamia Masjid Mohi-ul-Islam Siddiquia</a> <em>(East Ham, Newham)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque5145563725.jpg" alt="Madina Masjid & Muslim Cultural Centre (East Ham, Newham)"  width="145" height="145" border="1" title="Madina Masjid & Muslim Cultural Centre (East Ham, Newham) Madina Masjid Islamic Association, Muslim Cultural Centre"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/east-ham/Madina-Masjid-&-Muslim-Cultural-Centre-East-Ham-Newham/800">Madina Masjid & Muslim Cultural Centre</a> <em>(East Ham, Newham)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 </tr>
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque694639521.jpg" alt="Markaz ud Dawat wal Irshad Islamic Centre (East Ham, Newham)"  width="145" height="145" border="1" title="Markaz ud Dawat wal Irshad Islamic Centre (East Ham, Newham) "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/east-ham/Markaz-ud-Dawat-wal-Irshad-Islamic-Centre-East-Ham-Newham/889">Markaz ud Dawat wal Irshad Islamic Centre</a> <em>(East Ham, Newham)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque151938428.jpg" alt="Masjid Al-Falah (Barking Road, Plaistow, London)"  width="145" height="145" border="1" title="Masjid Al-Falah (Barking Road, Plaistow, London) "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/plaistow/Masjid-Al-Falah-Barking-Road-Plaistow-London/951">Masjid Al-Falah</a> <em>(Barking Road, Plaistow, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque5115542723.jpg" alt="Masjid Bilal & Islamic Centre (East Ham, Newham)"  width="145" height="145" border="1" title="Masjid Bilal & Islamic Centre (East Ham, Newham) Young Muslims (London), UKIM London East Ham Branch, Masjid Bilal"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/east-ham/Masjid-Bilal-&-Islamic-Centre-East-Ham-Newham/976">Masjid Bilal & Islamic Centre</a> <em>(East Ham, Newham)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque4866527677.jpg" alt="Masjid Ibrahim (Upton Park, Plaistow, Newham, London)"  width="145" height="145" border="1" title="Masjid Ibrahim (Upton Park, Plaistow, Newham, London) Ibrahim Mosque, Ibrahim Masjid, Masjid Ibrahim, UKIM (Ibrahim Mosque, Plaistow)"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/plaistow/Masjid-Ibrahim-Upton-Park-Plaistow-Newham-London/993">Masjid Ibrahim</a> <em>(Upton Park, Plaistow, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque4562147031.jpg" alt="Masjid-e-Quba (Forest Gate, Newham)"  width="145" height="145" border="1" title="Masjid-e-Quba (Forest Gate, Newham)  Anjuman Raza-e-Mustafa, Masjid E Quba Education Centre"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/forest-gate/Masjid-e-Quba-Forest-Gate-Newham/1053">Masjid-e-Quba</a> <em>(Forest Gate, Newham)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque787631204.jpg" alt="Masjid-e-Tauheed (Manor Park, Newham)"  width="145" height="145" border="1" title="Masjid-e-Tauheed (Manor Park, Newham) Manor Park Islamic Cultural Centre, Madrassa Talimul Islam"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/manor-park/Masjid-e-Tauheed-Manor-Park-Newham/1061">Masjid-e-Tauheed</a> <em>(Manor Park, Newham)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 </tr>
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque5709237335.jpg" alt="Baitur Rahmaniyyah Jamia Rahmaniyah (Manor Park, Newham, London)"  width="145" height="145" border="1" title="Baitur Rahmaniyyah Jamia Rahmaniyah (Manor Park, Newham, London) Jamia Rahmania, Newham Islamic Cultural Association"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/manor-park/Baitur-Rahmaniyyah-Jamia-Rahmaniyah-Manor-Park-Newham-London/1180">Baitur Rahmaniyyah Jamia Rahmaniyah</a> <em>(Manor Park, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque2687307703.jpg" alt="Newham North Islamic Association (Forest Gate, Newham, London)"  width="145" height="145" border="1" title="Newham North Islamic Association (Forest Gate, Newham, London) Green Street Mosque"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/forest-gate/Newham-North-Islamic-Association-Forest-Gate-Newham-London/1181">Newham North Islamic Association</a> <em>(Forest Gate, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque9706282438.jpg" alt="Shah Jalal Mosque (Manor Park, Newham, London)"  width="145" height="145" border="1" title="Shah Jalal Mosque (Manor Park, Newham, London) Manor Park Islamic Cultural Centre"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/manor-park/Shah-Jalal-Mosque-Manor-Park-Newham-London/1303">Shah Jalal Mosque</a> <em>(Manor Park, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque5513582802.jpg" alt="Stratford Islamic Association (Stratford, Newham, London)"  width="145" height="145" border="1" title="Stratford Islamic Association (Stratford, Newham, London) "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/stratford/Stratford-Islamic-Association-Stratford-Newham-London/1350">Stratford Islamic Association</a> <em>(Stratford, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque305178738.jpg" alt="Quwwat-UL-Islam (Forest Gate, Newham, London)"  width="145" height="145" border="1" title="Quwwat-UL-Islam (Forest Gate, Newham, London) Upton Lane Mosque, Quwwat-ul-Islam Society, Quwwat-UL-Islam, Upton Lane Masjid"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/forest-gate/Quwwat-UL-Islam-Forest-Gate-Newham-London/1470">Quwwat-UL-Islam</a> <em>(Forest Gate, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque6829434111.jpg" alt="Al-Hira Education Centre (Upton Park, Forest Gate, Newham, London)"  width="145" height="145" border="1" title="Al-Hira Education Centre (Upton Park, Forest Gate, Newham, London) "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/upton-park/Al-Hira-Education-Centre-Upton-Park-Forest-Gate-Newham-London/1554">Al-Hira Education Centre</a> <em>(Upton Park, Forest Gate, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 </tr>
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque29429253.jpg" alt="Khatme Nubuwwat Academy (Islamic Dawah Council UK) (Forest Gate, Newham, London)"  width="145" height="145" border="1" title="Khatme Nubuwwat Academy (Islamic Dawah Council UK) (Forest Gate, Newham, London) Khatm-eNubuwwat Academy, Islamic Dawa Council UK"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/forest-gate/Khatme-Nubuwwat-Academy-Islamic-Dawah-Council-UK-Forest-Gate-Newham-London/2744">Khatme Nubuwwat Academy</a> <em>(Forest Gate, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque9738499340.jpg" alt="Madrassa Talimul Islam (Manor Park, Newham, London)"  width="145" height="145" border="1" title="Madrassa Talimul Islam (Manor Park, Newham, London) Anjuman-e-Islamia Jamia Mosque"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/manor-park/Madrassa-Talimul-Islam-Manor-Park-Newham-London/2202">Madrassa Talimul Islam</a> <em>(Manor Park, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque177132673.jpg" alt="Sunni Razvi Jamia Masjid (Manor Park, Newham, London)"  width="145" height="145" border="1" title="Sunni Razvi Jamia Masjid (Manor Park, Newham, London) Anjuman-e-Islamia Newham, Jamia Mosque East Ham, Anjuman-e-Islamia Jamia Mosque"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/manor-park/Anjuman-e-Islamia-Jamia-Mosque-Manor-Park-Newham-London/3326">Sunni Razvi Jamia Masjid</a> <em>(Manor Park, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque7085931957.jpg" alt="Khidimah Academy (Stratford, Newham, London)"  width="145" height="145" border="1" title="Khidimah Academy (Stratford, Newham, London) "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/forest-gate/Khidimah-Academy-Stratford-Newham-London/2701">Khidimah Academy</a> <em>(Stratford, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque7973921103.jpg" alt="Plaistow Jamia Islamia (Plaistow, Newham, London)"  width="145" height="145" border="1" title="Plaistow Jamia Islamia (Plaistow, Newham, London) Jamia Madinatul Uloom Islamic Institute, Jamiah Madinatul Uloom UK, Plaistow Mosque, Plaistow Masjid"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/plaistow/Plaistow-Jamia-Islamia-Plaistow-Newham-London/2702">Plaistow Jamia Islamia</a> <em>(Plaistow, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque8128071539.jpg" alt="Hefazothe Islam Centre (Plaistow, Newham, London)"  width="145" height="145" border="1" title="Hefazothe Islam Centre (Plaistow, Newham, London) Hefazothe Islam Centre"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/plaistow/Hefazothe-Islam-Centre-Upton-Park-Plaistow-Newham-London/2703">Hefazothe Islam Centre</a> <em>(Plaistow, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 </tr>
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque8458740785.jpg" alt="Darul Arqam Islamic Community Centre (Canning Town, Newham, London)"  width="145" height="145" border="1" title="Darul Arqam Islamic Community Centre (Canning Town, Newham, London) Former Duke of Edinburgh public house."  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/canning-town/Darul-Arqam-Islamic-Community-Centre-Canning-Town-Newham-London/2706">Darul Arqam Islamic Community Centre</a> <em>(Canning Town, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque8812387883.jpg" alt="Azhar Academy and AAGS Sixth Form (Forest Gate, Newham, London)"  width="145" height="145" border="1" title="Azhar Academy and AAGS Sixth Form (Forest Gate, Newham, London) Azhar Academy, Azhar Academy Girls School"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/forest-gate/Azhar-Academy-and-AAGS-Sixth-Form-Forest-Gate-Newham-London/2731">Azhar Academy and AAGS Sixth Form</a> <em>(Forest Gate, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque1699456223.jpg" alt="Alif Academy (Forest Gate, Newham, London)"  width="145" height="145" border="1" title="Alif Academy (Forest Gate, Newham, London) Inspire Youth Centre, Imaan Pre-School, Masjid-E-Noor"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/forest-gate/Alif-Academy-Forest-Gate-Newham-London/2758">Alif Academy</a> <em>(Forest Gate, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque5601625186.jpg" alt="Westfield Stratford Multi Faith Prayer Room (Stratford, Newham, London)"  width="145" height="145" border="1" title="Westfield Stratford Multi Faith Prayer Room (Stratford, Newham, London) "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/stratford/Westfield-Stratford-Multi-Faith-Prayer-Room-Stratford-Newham-London/3045">Westfield Stratford Multi Faith Prayer Room</a> <em>(Stratford, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque1153255961.jpg" alt="London Iqra Academy (Plaistow, Newham, London)"  width="145" height="145" border="1" title="London Iqra Academy (Plaistow, Newham, London) "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/plaistow/London-Iqra-Academy-Plaistow-Newham-London/3192">London Iqra Academy</a> <em>(Plaistow, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque8693668679.jpg" alt="Masjid Al-Humera (Forest Gate, Newham, London)"  width="145" height="145" border="1" title="Masjid Al-Humera (Forest Gate, Newham, London) "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="mosques/england/london/newham/forest-gate/Masjid-Al-Humera-Forest-Gate-Newham-London/3216">Masjid Al-Humera</a> <em>(Forest Gate, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 </tr>
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque4413363542.jpg" alt="Talimul Quran UK Masjid (Maryland, Newham, London)"  width="145" height="145" border="1" title="Talimul Quran UK Masjid (Maryland, Newham, London) "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/maryland/Talimul-Quran-UK-Masjid-Maryland-Newham-London/3257">Talimul Quran UK Masjid</a> <em>(Maryland, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque1091383355.jpg" alt="Flanders Community Centre (East Ham, Newham, London)"  width="145" height="145" border="1" title="Flanders Community Centre (East Ham, Newham, London) "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/east-ham/Flanders-Community-Centre-East-Ham-Newham-London/3329">Flanders Community Centre</a> <em>(East Ham, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque462093628.jpg" alt="[Under Construction] Woolwich An-Noor Academy (North Woolwich, Newham)"  width="145" height="145" border="1" title="[Under Construction] Woolwich An-Noor Academy (North Woolwich, Newham) "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/north-woolwich/Woolwich-An-Noor-Academy-North-Woolwich-Newham/3403"> Woolwich An-Noor Academy</a> <em>(North Woolwich, Newham)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque9685716475.jpg" alt="Faizan-e-Madina (Stratford, Newham, London)"  width="145" height="145" border="1" title="Faizan-e-Madina (Stratford, Newham, London) Faizan e Madina, Dawat-e-Islami"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/newham/stratford/Faizan-e-Madina-Stratford-Newham-London/3406">Faizan-e-Madina</a> <em>(Stratford, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/" alt="Masjid Abdul Aziz Bin Baz (Stratford, Newham, London)"  width="145" height="145" border="1" title="Masjid Abdul Aziz Bin Baz (Stratford, Newham, London) "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="">Masjid Abdul Aziz Bin Baz</a> <em>(Stratford, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/" alt="Sri Lankan Muslim Centre (East Ham, Newham, London)"  width="145" height="145" border="1" title="Sri Lankan Muslim Centre (East Ham, Newham, London) SLMC East London, Masjidus Salam"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="">Sri Lankan Muslim Centre</a> <em>(East Ham, Newham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 </tr>
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/" alt="[Jumu'ah Salaah] Britannia Village Hall"  width="145" height="145" border="1" title="[Jumu'ah Salaah] Britannia Village Hall "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href=""> Britannia Village Hall</a> <em>[Jumu'ah Salaah] Britannia Village Hall</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+
+
+
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+<h2>Barking and Dagenham Mosques, London</h2>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+<tr valign='top'>
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque1050530169.jpg" alt="Alnoor Cultural and Educational Trust (Abbey, Barking, Barking & Dagenham)"  width="145" height="145" border="1" title="Alnoor Cultural and Educational Trust (Abbey, Barking, Barking & Dagenham) An-Noor Masjid and Community Centre, Al Noor Mosque, Al Noor Masjid"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/barking-and-dagenham/abbey/Masjid-Alnoor-Barking-Barking-&-Dagenham/41">Alnoor Cultural and Educational Trust</a> <em>(Abbey, Barking, Barking & Dagenham)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque4715303196.jpg" alt="Barking Mosque (Abbey, Barking & Dagenham, London)"  width="145" height="145" border="1" title="Barking Mosque (Abbey, Barking & Dagenham, London) Barking Muslim Association, Al-Madina Mosque, Barking Jamia Mosque, Barking Masjid, Ilford Mosque, Ilford Masjid, Ilford Lane Mosque, Al Madina Mosque Barking"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/barking-and-dagenham/abbey/Barking-Mosque-Barking-Barking-&-Dagenham/81">Barking Mosque</a> <em>(Abbey, Barking & Dagenham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque515109440.jpg" alt="Jabir Bin Zayd Islamic Centre (Abbey, Barking & Dagenham, Essex, London)"  width="145" height="145" border="1" title="Jabir Bin Zayd Islamic Centre (Abbey, Barking & Dagenham, Essex, London) Al Noor Cultural & Educational Trust, Ahlul Istiqamah Trust UK"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/barking-and-dagenham/abbey/Jabir-Bin-Zayd-Islamic-Centre-Barking-&-Dagenham-Essex-London/2760">Jabir Bin Zayd Islamic Centre</a> <em>(Abbey, Barking & Dagenham, Essex, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque2572385291.jpg" alt="Becontree Heath Islamic Society (Goodmayes, Dagenham, Essex, London)"  width="145" height="145" border="1" title="Becontree Heath Islamic Society (Goodmayes, Dagenham, Essex, London) BHIS, Dagenham Central Mosque, Dagenham Central Masjid"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/barking-and-dagenham/goodmayes/Becontree-Heath-Islamic-Society-Goodmayes-Dagenham-Essex-London/3009">Becontree Heath Islamic Society</a> <em>(Goodmayes, Dagenham, Essex, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque2252007746.jpg" alt="Dagenham East Education Centre (Dagenham East, London)"  width="145" height="145" border="1" title="Dagenham East Education Centre (Dagenham East, London) "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/barking-and-dagenham/dagenham-east/Dagenham-East-Education-Centre-Dagenham-East-London/3169">Dagenham East Education Centre</a> <em>(Dagenham East, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque2294193506.jpg" alt="Akanjee Foundation Islamic Center (Abbey, Barking and Dagenham, London)"  width="145" height="145" border="1" title="Akanjee Foundation Islamic Center (Abbey, Barking and Dagenham, London) Attaqwa Mosque, L B B D Somali Community Association, At-Taqwa Islamic & Family Centre, Akanjee Islamic Centre"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/barking-and-dagenham/abbey/Akanjee-Foundation-Islamic-Center-Abbey-Barking-and-Dagenham-London/3264">Akanjee Foundation Islamic Center</a> <em>(Abbey, Barking and Dagenham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 </tr>
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque4614467034.jpg" alt="Thames Community Hall (Barking, Essex, London)"  width="145" height="145" border="1" title="Thames Community Hall (Barking, Essex, London) "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/barking-and-dagenham/thames/Thames-Community-Hall-Barking-Essex-London/3395">Thames Community Hall</a> <em>(Barking, Essex, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque1889674928.jpg" alt="Masjed-e-Umar (Barking and Dagenham, Essex, London)"  width="145" height="145" border="1" title="Masjed-e-Umar (Barking and Dagenham, Essex, London) Essex Islamic Academy"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/barking-and-dagenham/eastbury/Masjed-e-Umar-Barking-and-Dagenham-Essex-London/3396">Masjed-e-Umar</a> <em>(Barking and Dagenham, Essex, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque8572016661.jpg" alt="LBBD Somali Community Association (Barking and Dagenham, London)"  width="145" height="145" border="1" title="LBBD Somali Community Association (Barking and Dagenham, London) L B B D Somali Community Association, At-Taqwa Islamic & Family Centre"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="">LBBD Somali Community Association</a> <em>(Barking and Dagenham, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+
+
+
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h2>Redbridge Mosques, London</h2>
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+
+
+<tr valign='top'>
+
+
+	 <td width="17%" valign="top">
+
+
+
+
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+
+
+  <tr valign="top">
+
+
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque3574628825.jpg" alt="Al-Ansar Islamic Education Centre (Goodmayes, Ilford, Redbridge)"  width="145" height="145" border="1" title="Al-Ansar Islamic Education Centre (Goodmayes, Ilford, Redbridge) "  /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+
+
+
+
+	
+
+
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/redbridge/ilford-goodmayes/Al-Ansar-Islamic-Education-Centre-Goodmayes-Ilford-Redbridge/49">Al-Ansar Islamic Education Centre</a> <em>(Goodmayes, Ilford, Redbridge)</em></td>
+
+
+
+  </tr>
+
+
+
+</table>	 
+
+
+
+	 
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+	 </td>
+
+
+
+	 
+
+
+	 <td width="17%" valign="top">
+
+
+
+
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+
+
+  <tr valign="top">
+
+
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque5797255327.jpg" alt="Eman Foundation Dawah Centre (Goodmayes, Ilford, Redbridge)"  width="145" height="145" border="1" title="Eman Foundation Dawah Centre (Goodmayes, Ilford, Redbridge) "  /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+
+
+
+
+	
+
+
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/redbridge/ilford/Eman-Foundation-Dawah-Centre-Goodmayes-Ilford-Redbridge/318">Eman Foundation Dawah Centre</a> <em>(Goodmayes, Ilford, Redbridge)</em></td>
+
+
+
+  </tr>
+
+
+
+</table>	 
+
+
+
+	 
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+	 </td>
+
+
+
+	 
+
+
+	 <td width="17%" valign="top">
+
+
+
+
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+
+
+  <tr valign="top">
+
+
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque3324491633.jpg" alt="Ilford Islamic Centre (Ilford, Redbridge)"  width="145" height="145" border="1" title="Ilford Islamic Centre (Ilford, Redbridge) Islamic Society of Britain - Ilford Branch, Association of Ilford Muslims, Albert Road Mosque"  /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+
+
+
+
+	
+
+
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/redbridge/ilford/Ilford-Islamic-Centre-Ilford-Redbridge/438">Ilford Islamic Centre</a> <em>(Ilford, Redbridge)</em></td>
+
+
+
+  </tr>
+
+
+
+</table>	 
+
+
+
+	 
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+	 </td>
+
+
+
+	 
+
+
+	 <td width="17%" valign="top">
+
+
+
+
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+
+
+  <tr valign="top">
+
+
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque3820497551.jpg" alt="Masjid-E-Dawatul Islam (Ilford, Redbridge, London)"  width="145" height="145" border="1" title="Masjid-E-Dawatul Islam (Ilford, Redbridge, London) Ilford Muslim Society, Dawat-ul-Islam"  /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+
+
+
+
+	
+
+
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/redbridge/ilford/Masjid-E-Dawatul-Islam-Ilford-Redbridge-London/439">Masjid-E-Dawatul Islam</a> <em>(Ilford, Redbridge, London)</em></td>
+
+
+
+  </tr>
+
+
+
+</table>	 
+
+
+
+	 
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+	 </td>
+
+
+
+	 
+
+
+	 <td width="17%" valign="top">
+
+
+
+
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+
+
+  <tr valign="top">
+
+
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque4588007624.jpg" alt="Ilford Muslim Community Centre and Mosque (Ilford, Redbridge)"  width="145" height="145" border="1" title="Ilford Muslim Community Centre and Mosque (Ilford, Redbridge) League of British Muslims - Ilford Muslim Centre, League of British Muslims UK"  /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+
+
+
+
+	
+
+
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/redbridge/ilford/Ilford-Muslim-Community-Centre-and-Mosque-Ilford-Redbridge/440">Ilford Muslim Community Centre and Mosque</a> <em>(Ilford, Redbridge)</em></td>
+
+
+
+  </tr>
+
+
+
+</table>	 
+
+
+
+	 
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+	 </td>
+
+
+
+	 
+
+
+	 <td width="17%" valign="top">
+
+
+
+
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+
+
+  <tr valign="top">
+
+
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque8169906930.jpg" alt="Mulberry Way Mosque (South Woodford, Redbridge, Essex)"  width="145" height="145" border="1" title="Mulberry Way Mosque (South Woodford, Redbridge, Essex) Qurani Murkuz Trust, Qurani Murkus Trust (QMS)"  /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+
+
+
+
+	
+
+
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/redbridge/woodford/Mulberry-Way-Mosque-South-Woodford-Redbridge-Essex/1120">Mulberry Way Mosque</a> <em>(South Woodford, Redbridge, Essex)</em></td>
+
+
+
+  </tr>
+
+
+
+</table>	 
+
+
+
+	 
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+	 </td>
+
+
+
+	 </tr>
+
+
+	 <td width="17%" valign="top">
+
+
+
+
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+
+
+  <tr valign="top">
+
+
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque7398174833.jpg" alt="Redbridge Masjid & Islamic Centre (Redbridge, Essex)"  width="145" height="145" border="1" title="Redbridge Masjid & Islamic Centre (Redbridge, Essex) R.I.C"  /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+
+
+
+
+	
+
+
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/redbridge/redbridge/Redbridge-Masjid-&-Islamic-Centre-Redbridge-Essex/1265">Redbridge Masjid & Islamic Centre</a> <em>(Redbridge, Essex)</em></td>
+
+
+
+  </tr>
+
+
+
+</table>	 
+
+
+
+	 
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+	 </td>
+
+
+
+	 
+
+
+	 <td width="17%" valign="top">
+
+
+
+
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+
+
+  <tr valign="top">
+
+
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque7090040175.jpg" alt="Gants Hill Masjid (Gants Hill, Ilford, Redbridge)"  width="145" height="145" border="1" title="Gants Hill Masjid (Gants Hill, Ilford, Redbridge) Redbridge and Chigwell Muslim Association, Redbridge Mosque & Islamic Centre, Redbridge and Chigwell Muslim Association, Redbridge Mosque & Islamic Centre"  /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+
+
+
+
+	
+
+
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/redbridge/gants-hill/Gants-Hill-Masjid-Gants-Hill-Ilford-Redbridge/1266">Gants Hill Masjid</a> <em>(Gants Hill, Ilford, Redbridge)</em></td>
+
+
+
+  </tr>
+
+
+
+</table>	 
+
+
+
+	 
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+	 </td>
+
+
+
+	 
+
+
+	 <td width="17%" valign="top">
+
+
+
+
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+
+
+  <tr valign="top">
+
+
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque1747630047.jpg" alt="Seven Kings Mosque (Seven Kings, Redbridge, London)"  width="145" height="145" border="1" title="Seven Kings Mosque (Seven Kings, Redbridge, London) Muslim Education Trust"  /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+
+
+
+
+	
+
+
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/redbridge/seven-kings/Seven-Kings-Mosque-Seven-Kings-Redbridge-London/1285">Seven Kings Mosque</a> <em>(Seven Kings, Redbridge, London)</em></td>
+
+
+
+  </tr>
+
+
+
+</table>	 
+
+
+
+	 
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+	 </td>
+
+
+
+	 
+
+
+	 <td width="17%" valign="top">
+
+
+
+
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+
+
+  <tr valign="top">
+
+
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque9510609628.jpg" alt="Masjid-e-Owais-e-Qarni (Ilford, Redbridge, London)"  width="145" height="145" border="1" title="Masjid-e-Owais-e-Qarni (Ilford, Redbridge, London) Uways al-Qarni Masjid, Redbridge Islamic Education Centre"  /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+
+
+
+
+	
+
+
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/redbridge/ilford/Masjid-e-Owais-e-Qarni-Ilford-Redbridge-London/3327">Masjid-e-Owais-e-Qarni</a> <em>(Ilford, Redbridge, London)</em></td>
+
+
+
+  </tr>
+
+
+
+</table>	 
+
+
+
+	 
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+	 </td>
+
+
+
+	 
+
+
+	 <td width="17%" valign="top">
+
+
+
+
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+
+
+  <tr valign="top">
+
+
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque422164914.jpg" alt="The Dropped Pin Quaker Centre (Wanstead, Redbridge, London)"  width="145" height="145" border="1" title="The Dropped Pin Quaker Centre (Wanstead, Redbridge, London) Wanstead Quaker Meeting "  /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+
+
+
+
+	
+
+
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/redbridge/wanstead/The-Dropped-Pin-Quaker-Centre-Wanstead-Redbridge-London/3003">The Dropped Pin Quaker Centre</a> <em>(Wanstead, Redbridge, London)</em></td>
+
+
+
+  </tr>
+
+
+
+</table>	 
+
+
+
+	 
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+	 </td>
+
+
+
+	 
+
+
+	 <td width="17%" valign="top">
+
+
+
+
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+
+
+  <tr valign="top">
+
+
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque509112884.jpg" alt="Loxford Muslim Society and Education Centre (Ilford, Redbridge, London)"  width="145" height="145" border="1" title="Loxford Muslim Society and Education Centre (Ilford, Redbridge, London) Ilford Mosque, Loxford Mosque, Ilford Masjid, Loxford Masjid, Loxford Muslim Society, Masjid-e-Yusuf"  /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+
+
+
+
+	
+
+
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/redbridge/ilford/Loxford-Muslim-Society-and-Education-Centre-Ilford-Redbridge-London/3149">Loxford Muslim Society and Education Centre</a> <em>(Ilford, Redbridge, London)</em></td>
+
+
+
+  </tr>
+
+
+
+</table>	 
+
+
+
+	 
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+	 </td>
+
+
+
+	 </tr>
+
+
+	 <td width="17%" valign="top">
+
+
+
+
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+
+
+  <tr valign="top">
+
+
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque5309327053.jpg" alt="Newbury Park Islamic Cultural Centre (Newbury Park, Ilford, Essex)"  width="145" height="145" border="1" title="Newbury Park Islamic Cultural Centre (Newbury Park, Ilford, Essex) NPICC"  /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+
+
+
+
+	
+
+
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/redbridge/ilford/Newbury-Park-Islamic-Cultural-Centre-Newbury-Park-Ilford-Essex/3201">Newbury Park Islamic Cultural Centre</a> <em>(Newbury Park, Ilford, Essex)</em></td>
+
+
+
+  </tr>
+
+
+
+</table>	 
+
+
+
+	 
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+	 </td>
+
+
+
+	 
+
+
+	 <td width="17%" valign="top">
+
+
+
+
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+
+
+  <tr valign="top">
+
+
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque2309126676.jpg" alt="Al-Bayan Welfare Centre (Ilford, Redbridge, London)"  width="145" height="145" border="1" title="Al-Bayan Welfare Centre (Ilford, Redbridge, London) "  /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+
+
+
+
+	
+
+
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/redbridge/ilford/Al-Bayan-Welfare-Centre-Ilford-Redbridge-London/3239">Al-Bayan Welfare Centre</a> <em>(Ilford, Redbridge, London)</em></td>
+
+
+
+  </tr>
+
+
+
+</table>	 
+
+
+
+	 
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+	 </td>
+
+
+
+	 
+
+
+	 <td width="17%" valign="top">
+
+
+
+
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+
+
+  <tr valign="top">
+
+
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque5327696893.jpg" alt="At-Taqwa Academy (Ilford, Redbridge, London)"  width="145" height="145" border="1" title="At-Taqwa Academy (Ilford, Redbridge, London) "  /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+
+
+
+
+	
+
+
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/redbridge/ilford/At-Taqwa-Academy-Ilford-Redbridge-London/3295">At-Taqwa Academy</a> <em>(Ilford, Redbridge, London)</em></td>
+
+
+
+  </tr>
+
+
+
+</table>	 
+
+
+
+	 
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+	 </td>
+
+
+
+	 
+
+
+	 <td width="17%" valign="top">
+
+
+
+
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+
+
+  <tr valign="top">
+
+
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque1493998435.jpg" alt="Sana Welfare Foundation UK (Ilford, Redbridge, London)"  width="145" height="145" border="1" title="Sana Welfare Foundation UK (Ilford, Redbridge, London) "  /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+
+
+
+
+	
+
+
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/redbridge/ilford/Sana-Welfare-Foundation-UK-Ilford-Redbridge-London/3330">Sana Welfare Foundation UK</a> <em>(Ilford, Redbridge, London)</em></td>
+
+
+
+  </tr>
+
+
+
+</table>	 
+
+
+
+	 
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+	 </td>
+
+
+
+	 
+
+
+	 <td width="17%" valign="top">
+
+
+
+
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+
+
+  <tr valign="top">
+
+
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque3508708295.jpg" alt="Ilford Câmii ve Islam Kültür Merkezi (Ilford, Redbridge, London)"  width="145" height="145" border="1" title="Ilford Câmii ve Islam Kültür Merkezi (Ilford, Redbridge, London) Ilford Mosque and Islamic Cultural Centre"  /></td>
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+
+
+
+
+	
+
+
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/redbridge/ilford/Ilford-C%EF%BF%BDmii-ve-Islam-K%EF%BF%BDlt%EF%BF%BDr-Merkezi-Ilford-Redbridge-London/3417">Ilford Câmii ve Islam Kültür Merkezi</a> <em>(Ilford, Redbridge, London)</em></td>
+
+
+
+  </tr>
+
+
+
+</table>	 
+
+
+
+	 
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+	 </td>
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h2>Walthamstaw Mosques, London</h2>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+<tr valign='top'>
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque7922672545.jpg" alt="Ashville Masjid and Muslim Welfare Trust (Leytonstone, Waltham Forest)"  width="145" height="145" border="1" title="Ashville Masjid and Muslim Welfare Trust (Leytonstone, Waltham Forest) Masjid-e-Usman, Muslim Welfare Trust"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="http://www.mosquedirectory.co.uk/mosques/england/london/waltham-forest/leytonstone/Ashville-Masjid-and-Muslim-Welfare-Trust-Leytonstone-Waltham-Forest/133">Ashville Masjid and Muslim Welfare Trust</a> <em>(Leytonstone, Waltham Forest)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque26036289.jpg" alt="Chingford Islamic Society (Chingford, Waltham Forest)"  width="145" height="145" border="1" title="Chingford Islamic Society (Chingford, Waltham Forest) Islamic Bookshop and Cultural Centre"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="mosques/england/london/waltham-forest/chingford/Chingford-Islamic-Society-Chingford-Waltham-Forest/241">Chingford Islamic Society</a> <em>(Chingford, Waltham Forest)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque4978206306.jpg" alt="Dar-ul-Uloom Qadria Jalani Masjid (Walthamstow, Waltham Forest)"  width="145" height="145" border="1" title="Dar-ul-Uloom Qadria Jalani Masjid (Walthamstow, Waltham Forest) International Muslim Movement"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="mosques/england/london/waltham-forest/walthamstow/Dar-ul-Uloom-Qadria-Jalani-Masjid-Walthamstow-Waltham-Forest/282">Dar-ul-Uloom Qadria Jalani Masjid</a> <em>(Walthamstow, Waltham Forest)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque5978110944.jpg" alt="Faizan-e-Islam Educational and Cultural Trust (Walthamstow, Waltham Forest)"  width="145" height="145" border="1" title="Faizan-e-Islam Educational and Cultural Trust (Walthamstow, Waltham Forest) "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="mosques/england/london/waltham-forest/walthamstow/Faizan-e-Islam-Educational-and-Cultural-Trust-Walthamstow-Waltham-Forest/327">Faizan-e-Islam Educational and Cultural Trust</a> <em>(Walthamstow, Waltham Forest)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque736911326.jpg" alt="Islamic Education Centre (Leyton, Waltham Forest)"  width="145" height="145" border="1" title="Islamic Education Centre (Leyton, Waltham Forest) Islamic Education Trust"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="mosques/england/london/waltham-forest/leyton/Islamic-Education-Centre-Leyton-Waltham-Forest/510">Islamic Education Centre</a> <em>(Leyton, Waltham Forest)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque1807821625.jpg" alt="Jamia Masjid Ghosia (Leyton, Waltham Forest)"  width="145" height="145" border="1" title="Jamia Masjid Ghosia (Leyton, Waltham Forest) Walthamstow Mosque, Waltham Forest Islamic Association"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="mosques/england/london/waltham-forest/leyton/Jamia-Masjid-Ghosia-Leyton-Waltham-Forest/623">Jamia Masjid Ghosia</a> <em>(Leyton, Waltham Forest)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 </tr>
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque6957178809.jpg" alt="Leytonstone Mosque (Leytonstone, Waltham Forest)"  width="145" height="145" border="1" title="Leytonstone Mosque (Leytonstone, Waltham Forest) Leytonstone Islamic Association"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="mosques/england/london/waltham-forest/leytonstone/Leytonstone-Mosque-Leytonstone-Waltham-Forest/772">Leytonstone Mosque</a> <em>(Leytonstone, Waltham Forest)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque653621847.jpg" alt="Masjid and Madrasah Al-Tawhid (Leyton, Waltham Forest, London)"  width="145" height="145" border="1" title="Masjid and Madrasah Al-Tawhid (Leyton, Waltham Forest, London) Islamic Shariah Council, Masjid Al Tawheed-Leyton, Al Qur'an Society"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="mosques/england/london/waltham-forest/leyton/Masjid-and-Madrasah-Al-Tawhid-Leyton-Waltham-Forest-London/922">Masjid and Madrasah Al-Tawhid</a> <em>(Leyton, Waltham Forest, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque871674758.jpg" alt="Masjid Abu Bakr and Islamic Education Centre (Trust) (Walthamstow, Waltham Forest)"  width="145" height="145" border="1" title="Masjid Abu Bakr and Islamic Education Centre (Trust) (Walthamstow, Waltham Forest) Higham Hill Mosque Trust"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="mosques/england/london/waltham-forest/walthamstow/Masjid-Abu-Bakr-and-Islamic-Education-Centre-Trust-Walthamstow-Waltham-Forest/930">Masjid Abu Bakr and Islamic Education Centre</a> <em>(Walthamstow, Waltham Forest)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque727063712.jpg" alt="Masjid Albirr (Leyton, Waltham Forest)"  width="145" height="145" border="1" title="Masjid Albirr (Leyton, Waltham Forest) Al-Birr Community Centre, Waqf Al-Birr Educational Trust, Albirr Foundation UK, Al-Birr Islamic School"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="mosques/england/london/waltham-forest/leyton/Masjid-Albirr-Leyton-Waltham-Forest/948">Masjid Albirr</a> <em>(Leyton, Waltham Forest)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque3444293239.jpg" alt="Masjid Al-tawheed (Leyton, Waltham Forest)"  width="145" height="145" border="1" title="Masjid Al-tawheed (Leyton, Waltham Forest) Masjid and Madrasah Al-Tawhid, Islamic Shariah Council, Masjid Al Tawheed-Leyton"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="mosques/england/london/waltham-forest/leyton/Masjid-Al-tawheed-Leyton-Waltham-Forest/960">Masjid Al-tawheed</a> <em>(Leyton, Waltham Forest)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque5018395977.jpg" alt="Masjid-e-Umer Trust (Walthamstow, Waltham Forest)"  width="145" height="145" border="1" title="Masjid-e-Umer Trust (Walthamstow, Waltham Forest) Waltham Forest Muslim Welfare Society"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="mosques/england/london/waltham-forest/walthamstow/Masjid-e-Umer-Trust-Walthamstow-Waltham-Forest/1069">Masjid-e-Umer Trust</a> <em>(Walthamstow, Waltham Forest)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 </tr>
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque7506841034.jpg" alt="Leyton Jamia Masjid (Jamia Masjid) (Leyton, Waltham Forest, London)"  width="145" height="145" border="1" title="Leyton Jamia Masjid (Jamia Masjid) (Leyton, Waltham Forest, London) Muslim Community Centre and Jame Masjid"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="mosques/england/london/waltham-forest/leyton/Leyton-Jamia-Masjid-Jamia-Masjid-Leyton-Waltham-Forest-London/1136">Leyton Jamia Masjid</a> <em>(Leyton, Waltham Forest, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque7103625312.jpg" alt="Noor-ur-Islam Mosque (Leyton, Waltham Forest)"  width="145" height="145" border="1" title="Noor-ur-Islam Mosque (Leyton, Waltham Forest) Muslim Cultural Society, Waltham Forest Noor Ul Islam Trust, WF Noor Ul Islam Trust, Noor-ul-Islam Centre"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="mosques/england/london/waltham-forest/leyton/Noor-ur-Islam-Mosque-Leyton-Waltham-Forest/1196">Noor-ur-Islam Mosque</a> <em>(Leyton, Waltham Forest)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque9543611938.jpg" alt="Sakina Islamic Centre (Walthamstow, Waltham Forest, London)"  width="145" height="145" border="1" title="Sakina Islamic Centre (Walthamstow, Waltham Forest, London) "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="mosques/england/london/waltham-forest/walthamstow/Sakina-Islamic-Centre-Walthamstow-Waltham-Forest-London/1275">Sakina Islamic Centre</a> <em>(Walthamstow, Waltham Forest, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque3841976467.jpg" alt="Cann Hall Deen and Education Trust (Cann Hall, Leytonstone, Waltham Forest, London)"  width="145" height="145" border="1" title="Cann Hall Deen and Education Trust (Cann Hall, Leytonstone, Waltham Forest, London) CHDET, Cann Hall Masjid"  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="mosques/england/london/waltham-forest/leytonstone/Cann-Hall-Deen-and-Education-Trust-Cann-Hall-Leytonstone-Waltham-Forest-London/2734">Cann Hall Deen and Education Trust</a> <em>(Cann Hall, Leytonstone, Waltham Forest, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque5895685781.jpg" alt="Azhar Academy Girls School (Leytonstone, Waltham Forest, London) - Being Purchased"  width="145" height="145" border="1" title="Azhar Academy Girls School (Leytonstone, Waltham Forest, London) - Being Purchased "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="mosques/england/london/waltham-forest/leytonstone/Azhar-Academy-Girls-School-Leytonstone-Waltham-Forest-London--Being-Purchased/2860">Azhar Academy Girls School  - Being Purchased</a> <em>(Leytonstone, Waltham Forest, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+	 <td width="17%" valign="top">
+
+
+
+<table width="100%"  border="0" cellpadding="1" cellspacing="3" >
+
+  <tr valign="top">
+
+    <td ><img src="http://www.mosquedirectory.co.uk/img/uploads/mosque2729933173.jpg" alt="Faizan-e-Islam Centre (Wood Street, Waltham Forest, London)"  width="145" height="145" border="1" title="Faizan-e-Islam Centre (Wood Street, Waltham Forest, London) "  /></td>
+
+  </tr>
+
+  <tr>
+
+
+
+	
+    <td align="center" valign="top" ><a href="mosques/england/london/waltham-forest/wood-street/Faizan-e-Islam-Centre-Wood-Street-Waltham-Forest-London/3333">Faizan-e-Islam Centre</a> <em>(Wood Street, Waltham Forest, London)</em></td>
+
+  </tr>
+
+</table>	 
+
+	 
+
+	 
+
+
+
+
+
+	 </td>
+
+	 
+
+
+
+
+
+
+</table>
+
+
+
+
+
+
+        </div>  
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+<div class="pusherDiv">
+
+
+
+</div> 
+
+
+
+    <div id="seo-links" class="clearfix"> 
+
+
+
+    <div id="searches" class="clearfix">
+
+
+
+      <table width="100%" border="0" cellspacing="5" cellpadding="5">
+
+
+
+  <tr>
+
+
+
+    <td width="52%" valign="top"><h3>Top Mosques Searches</h3></td>
+
+
+
+    <td width="48%">
+
+
+
+
+
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" >
+
+
+
+  <tr>
+
+
+
+    <td valign="top">
+
+
+
+
+
+
+
+
+
+
+
+      <div align="left">
+
+
+
+        <h3>Monthly Prayer Time Table</h3>
+
+
+
+      </div></td>
+
+
+
+</tr>
+
+
+
+</table>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </td>
+
+
+
+
+
+
+
+  </tr>
+
+
+
+  <tr>
+
+
+
+<td valign="top" bgcolor="#FFFFFF"> <ul> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=London&amp;page=1" title="Search London Mosques"> 1. London</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Birmingham&amp;page=1" title="Search Birmingham Mosques"> 2. Birmingham</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Leicester&amp;page=1" title="Search Leicester Mosques"> 3. Leicester</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Bradford&amp;page=1" title="Search Bradford Mosques"> 4. Bradford</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Manchester&amp;page=1" title="Search Manchester Mosques"> 5. Manchester</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Leeds&amp;page=1" title="Search Leeds Mosques"> 6. Leeds</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Sheffield&amp;page=1" title="Search Sheffield Mosques"> 7. Sheffield</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Glasgow&amp;page=1" title="Search Glasgow Mosques"> 8. Glasgow</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Blackburn&amp;page=1" title="Search Blackburn Mosques"> 9. Blackburn</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Cardiff&amp;page=1" title="Search Cardiff Mosques"> 10. Cardiff</a></li> </ul> <ul> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Bristol&amp;page=1" title="Search Bristol Mosques"> 11. Bristol</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=West midlands&amp;page=1" title="Search West midlands Mosques"> 12. West midlands</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Edinburgh&amp;page=1" title="Search Edinburgh Mosques"> 13. Edinburgh</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=West yorkshire&amp;page=1" title="Search West yorkshire Mosques"> 14. West yorkshire</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Lancashire&amp;page=1" title="Search Lancashire Mosques"> 15. Lancashire</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Newham&amp;page=1" title="Search Newham Mosques"> 16. Newham</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Oldham&amp;page=1" title="Search Oldham Mosques"> 17. Oldham</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Luton&amp;page=1" title="Search Luton Mosques"> 18. Luton</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Dewsbury&amp;page=1" title="Search Dewsbury Mosques"> 19. Dewsbury</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Bolton&amp;page=1" title="Search Bolton Mosques"> 20. Bolton</a></li> </ul> <ul> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Nottingham&amp;page=1" title="Search Nottingham Mosques"> 21. Nottingham</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Walsall&amp;page=1" title="Search Walsall Mosques"> 22. Walsall</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Huddersfield&amp;page=1" title="Search Huddersfield Mosques"> 23. Huddersfield</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Brent&amp;page=1" title="Search Brent Mosques"> 24. Brent</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Tower hamlets&amp;page=1" title="Search Tower hamlets Mosques"> 25. Tower hamlets</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Cheetham hill&amp;page=1" title="Search Cheetham hill Mosques"> 26. Cheetham hill</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=York&amp;page=1" title="Search York Mosques"> 27. York</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Forest gate&amp;page=1" title="Search Forest gate Mosques"> 28. Forest gate</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Leyton&amp;page=1" title="Search Leyton Mosques"> 29. Leyton</a></li> <li><img src="img/icon_search_small.gif"> <a href="search_mosque/mosquesearch.php?mosque=Ilford&amp;page=1" title="Search Ilford Mosques"> 30. Ilford</a></li> </ul>     
+
+
+
+		
+
+
+
+
+
+
+
+      <iframe title="YouTube video player" width="480" height="390" src="http://www.youtube.com/embed/ZHujiWd49l4" frameborder="0" allowfullscreen></iframe></td>
+
+
+
+    <td valign="top">
+
+
+
+	
+
+
+
+	Todays Date is: 08/03/2016
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="100%" border="0" cellspacing="5" cellpadding="5">
+
+
+
+  <tr>
+
+
+
+    <td><h3>Day</h3></td>
+
+
+
+    <td><h3>Fajr</h3></td>
+
+
+
+    <td><h3>Sunrise</h3></td>
+
+
+
+    <td><h3>Zuhr (Dhuhr)</h3></td>
+
+
+
+    <td><h3>Asr</h3></td>
+
+
+
+    <td><h3>Magrib</h3></td>
+
+
+
+    <td><h3>Isha</h3></td>
+
+
+
+  </tr>
+
+
+
+
+
+
+
+<tr >
+
+
+
+    
+
+
+
+	<td>1</td>
+
+
+
+    <td>4:53</td>
+
+
+
+    <td>6:44</td>
+
+
+
+    <td>12:13</td>	
+
+
+
+    <td>3:05</td>	
+
+
+
+    <td>5:42</td>
+
+
+
+    <td>7:27</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>2</td>
+
+
+
+    <td>4:50</td>
+
+
+
+    <td>6:42</td>
+
+
+
+    <td>12:13</td>	
+
+
+
+    <td>3:06</td>	
+
+
+
+    <td>5:43</td>
+
+
+
+    <td>7:28</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>3</td>
+
+
+
+    <td>4:48</td>
+
+
+
+    <td>6:40</td>
+
+
+
+    <td>12:13</td>	
+
+
+
+    <td>3:08</td>	
+
+
+
+    <td>5:45</td>
+
+
+
+    <td>7:30</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>4</td>
+
+
+
+    <td>4:46</td>
+
+
+
+    <td>6:38</td>
+
+
+
+    <td>12:12</td>	
+
+
+
+    <td>3:09</td>	
+
+
+
+    <td>5:47</td>
+
+
+
+    <td>7:32</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>5</td>
+
+
+
+    <td>4:44</td>
+
+
+
+    <td>6:35</td>
+
+
+
+    <td>12:12</td>	
+
+
+
+    <td>3:10</td>	
+
+
+
+    <td>5:49</td>
+
+
+
+    <td>7:34</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>6</td>
+
+
+
+    <td>4:44</td>
+
+
+
+    <td>6:35</td>
+
+
+
+    <td>12:12</td>	
+
+
+
+    <td>3:10</td>	
+
+
+
+    <td>5:49</td>
+
+
+
+    <td>7:34</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>7</td>
+
+
+
+    <td>4:39</td>
+
+
+
+    <td>6:31</td>
+
+
+
+    <td>12:12</td>	
+
+
+
+    <td>3:12</td>	
+
+
+
+    <td>5:52</td>
+
+
+
+    <td>7:37</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>8</td>
+
+
+
+    <td>4:37</td>
+
+
+
+    <td>6:29</td>
+
+
+
+    <td>12:11</td>	
+
+
+
+    <td>3:14</td>	
+
+
+
+    <td>5:54</td>
+
+
+
+    <td>7:39</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>9</td>
+
+
+
+    <td>4:34</td>
+
+
+
+    <td>6:27</td>
+
+
+
+    <td>12:11</td>	
+
+
+
+    <td>3:15</td>	
+
+
+
+    <td>5:56</td>
+
+
+
+    <td>7:41</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>10</td>
+
+
+
+    <td>4:32</td>
+
+
+
+    <td>6:24</td>
+
+
+
+    <td>12:11</td>	
+
+
+
+    <td>3:16</td>	
+
+
+
+    <td>5:57</td>
+
+
+
+    <td>7:43</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>11</td>
+
+
+
+    <td>4:30</td>
+
+
+
+    <td>6:22</td>
+
+
+
+    <td>12:11</td>	
+
+
+
+    <td>3:17</td>	
+
+
+
+    <td>5:59</td>
+
+
+
+    <td>7:45</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>12</td>
+
+
+
+    <td>4:27</td>
+
+
+
+    <td>6:20</td>
+
+
+
+    <td>12:10</td>	
+
+
+
+    <td>3:18</td>	
+
+
+
+    <td>6:01</td>
+
+
+
+    <td>7:47</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>13</td>
+
+
+
+    <td>4:25</td>
+
+
+
+    <td>6:18</td>
+
+
+
+    <td>12:10</td>	
+
+
+
+    <td>3:19</td>	
+
+
+
+    <td>6:03</td>
+
+
+
+    <td>7:49</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>14</td>
+
+
+
+    <td>4:22</td>
+
+
+
+    <td>6:15</td>
+
+
+
+    <td>12:10</td>	
+
+
+
+    <td>3:20</td>	
+
+
+
+    <td>6:04</td>
+
+
+
+    <td>7:50</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>15</td>
+
+
+
+    <td>4:20</td>
+
+
+
+    <td>6:13</td>
+
+
+
+    <td>12:10</td>	
+
+
+
+    <td>3:22</td>	
+
+
+
+    <td>6:06</td>
+
+
+
+    <td>7:52</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>16</td>
+
+
+
+    <td>4:17</td>
+
+
+
+    <td>6:11</td>
+
+
+
+    <td>12:09</td>	
+
+
+
+    <td>3:23</td>	
+
+
+
+    <td>6:08</td>
+
+
+
+    <td>7:54</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>17</td>
+
+
+
+    <td>4:15</td>
+
+
+
+    <td>6:08</td>
+
+
+
+    <td>12:09</td>	
+
+
+
+    <td>3:24</td>	
+
+
+
+    <td>6:09</td>
+
+
+
+    <td>7:56</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>18</td>
+
+
+
+    <td>4:12</td>
+
+
+
+    <td>6:06</td>
+
+
+
+    <td>12:09</td>	
+
+
+
+    <td>3:25</td>	
+
+
+
+    <td>6:11</td>
+
+
+
+    <td>7:58</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>19</td>
+
+
+
+    <td>4:10</td>
+
+
+
+    <td>6:04</td>
+
+
+
+    <td>12:08</td>	
+
+
+
+    <td>3:26</td>	
+
+
+
+    <td>6:13</td>
+
+
+
+    <td>8:00</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>20</td>
+
+
+
+    <td>4:07</td>
+
+
+
+    <td>6:02</td>
+
+
+
+    <td>12:08</td>	
+
+
+
+    <td>3:27</td>	
+
+
+
+    <td>6:14</td>
+
+
+
+    <td>8:02</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>21</td>
+
+
+
+    <td>4:07</td>
+
+
+
+    <td>6:02</td>
+
+
+
+    <td>12:08</td>	
+
+
+
+    <td>3:27</td>	
+
+
+
+    <td>6:14</td>
+
+
+
+    <td>8:02</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>22</td>
+
+
+
+    <td>4:02</td>
+
+
+
+    <td>5:57</td>
+
+
+
+    <td>12:07</td>	
+
+
+
+    <td>3:29</td>	
+
+
+
+    <td>6:18</td>
+
+
+
+    <td>8:06</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>23</td>
+
+
+
+    <td>3:59</td>
+
+
+
+    <td>5:55</td>
+
+
+
+    <td>12:07</td>	
+
+
+
+    <td>3:30</td>	
+
+
+
+    <td>6:20</td>
+
+
+
+    <td>8:08</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>24</td>
+
+
+
+    <td>3:57</td>
+
+
+
+    <td>5:53</td>
+
+
+
+    <td>12:07</td>	
+
+
+
+    <td>3:31</td>	
+
+
+
+    <td>6:21</td>
+
+
+
+    <td>8:10</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>25</td>
+
+
+
+    <td>3:54</td>
+
+
+
+    <td>5:50</td>
+
+
+
+    <td>12:07</td>	
+
+
+
+    <td>3:32</td>	
+
+
+
+    <td>6:23</td>
+
+
+
+    <td>8:12</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>26</td>
+
+
+
+    <td>3:51</td>
+
+
+
+    <td>5:48</td>
+
+
+
+    <td>12:06</td>	
+
+
+
+    <td>3:33</td>	
+
+
+
+    <td>6:25</td>
+
+
+
+    <td>8:14</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>27</td>
+
+
+
+    <td>4:48</td>
+
+
+
+    <td>6:46</td>
+
+
+
+    <td>1:06</td>	
+
+
+
+    <td>4:34</td>	
+
+
+
+    <td>7:26</td>
+
+
+
+    <td>9:16</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>28</td>
+
+
+
+    <td>4:46</td>
+
+
+
+    <td>6:43</td>
+
+
+
+    <td>1:06</td>	
+
+
+
+    <td>4:34</td>	
+
+
+
+    <td>7:28</td>
+
+
+
+    <td>9:18</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>29</td>
+
+
+
+    <td>4:43</td>
+
+
+
+    <td>6:41</td>
+
+
+
+    <td>1:05</td>	
+
+
+
+    <td>4:35</td>	
+
+
+
+    <td>7:30</td>
+
+
+
+    <td>9:20</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>30</td>
+
+
+
+    <td>4:40</td>
+
+
+
+    <td>6:39</td>
+
+
+
+    <td>1:05</td>	
+
+
+
+    <td>4:36</td>	
+
+
+
+    <td>7:31</td>
+
+
+
+    <td>9:22</td>				
+
+
+
+	
+
+
+
+  </tr><tr >
+
+
+
+    
+
+
+
+	<td>31</td>
+
+
+
+    <td>4:37</td>
+
+
+
+    <td>6:37</td>
+
+
+
+    <td>1:05</td>	
+
+
+
+    <td>4:37</td>	
+
+
+
+    <td>7:33</td>
+
+
+
+    <td>9:25</td>				
+
+
+
+	
+
+
+
+  </tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+    <div id="searches" class="clearfix"> 
+
+
+
+    <table width="100%" border="0" cellspacing="2" cellpadding="1">
+
+
+
+      <tr>
+
+
+
+        <td width="50%"><h3>UK Mosque Nationality</h3></td>
+
+
+
+        <td width="50%"><h3>UK Mosque Followings</h3></td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+
+
+    <table width="100%" border="0" cellspacing="5" cellpadding="5" style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px;">
+
+
+
+  <tr>
+
+
+
+    <td width="50%" valign="top">
+
+
+
+    
+
+
+
+    <table width="100%" border="0" cellspacing="5" cellpadding="5" style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px;">
+
+
+
+  
+
+
+
+
+
+
+
+	<tr>
+
+
+
+    <td width="5%"><img src="img/flag/pak.jpg" alt="Pakistani Mosques in Britain" width="32" height="25" /></td>
+
+
+
+    <td width="50%">Pakistani Mosques <strong>48.07%</strong></td>
+
+
+
+    <td width="45%">
+
+
+
+    
+
+
+
+    <table width="48.07%" border="1" cellpadding="0" cellspacing="0" bgcolor="#8cb384" style="border-size:3px; border-color:#8cb384">
+
+
+
+      <tr>
+
+
+
+        <td>&nbsp;</td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+
+
+    
+
+
+
+    </td>
+
+
+
+	</tr>
+
+
+
+	
+
+
+
+
+
+
+
+	<tr>
+
+
+
+    <td width="5%"><img src="img/flag/bang.jpg" alt="Bangladeshi Mosques in Britain" width="32" height="25" /></td>
+
+
+
+    <td width="50%">Bangladeshi Mosques <strong>25.47%</strong></td>
+
+
+
+    <td width="45%">
+
+
+
+    
+
+
+
+    <table width="25.47%" border="1" cellpadding="0" cellspacing="0" bgcolor="#8cb384" style="border-size:3px; border-color:#8cb384">
+
+
+
+      <tr>
+
+
+
+        <td>&nbsp;</td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+
+
+    
+
+
+
+    </td>
+
+
+
+	</tr>
+
+
+
+	
+
+
+
+
+
+
+
+	<tr>
+
+
+
+    <td width="5%"><img src="img/flag/bang.jpg" alt=" Mosques in Britain" width="32" height="25" /></td>
+
+
+
+    <td width="50%"> Mosques <strong>23.29%</strong></td>
+
+
+
+    <td width="45%">
+
+
+
+    
+
+
+
+    <table width="23.29%" border="1" cellpadding="0" cellspacing="0" bgcolor="#8cb384" style="border-size:3px; border-color:#8cb384">
+
+
+
+      <tr>
+
+
+
+        <td>&nbsp;</td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+
+
+    
+
+
+
+    </td>
+
+
+
+	</tr>
+
+
+
+	
+
+
+
+
+
+
+
+	<tr>
+
+
+
+    <td width="5%"><img src="img/flag/guj.jpg" alt="Gujerati Mosques in Britain" width="32" height="25" /></td>
+
+
+
+    <td width="50%">Gujerati Mosques <strong>9.51%</strong></td>
+
+
+
+    <td width="45%">
+
+
+
+    
+
+
+
+    <table width="9.51%" border="1" cellpadding="0" cellspacing="0" bgcolor="#8cb384" style="border-size:3px; border-color:#8cb384">
+
+
+
+      <tr>
+
+
+
+        <td>&nbsp;</td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+
+
+    
+
+
+
+    </td>
+
+
+
+	</tr>
+
+
+
+	
+
+
+
+
+
+
+
+	<tr>
+
+
+
+    <td width="5%"><img src="img/flag/guj.jpg" alt="Students Mosques in Britain" width="32" height="25" /></td>
+
+
+
+    <td width="50%">Students Mosques <strong>4.66%</strong></td>
+
+
+
+    <td width="45%">
+
+
+
+    
+
+
+
+    <table width="4.66%" border="1" cellpadding="0" cellspacing="0" bgcolor="#8cb384" style="border-size:3px; border-color:#8cb384">
+
+
+
+      <tr>
+
+
+
+        <td>&nbsp;</td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+
+
+    
+
+
+
+    </td>
+
+
+
+	</tr>
+
+
+
+	
+
+
+
+
+
+
+
+	<tr>
+
+
+
+    <td width="5%"><img src="img/flag/arab.jpg" alt="Arab Mosques in Britain" width="32" height="25" /></td>
+
+
+
+    <td width="50%">Arab Mosques <strong>3.96%</strong></td>
+
+
+
+    <td width="45%">
+
+
+
+    
+
+
+
+    <table width="3.96%" border="1" cellpadding="0" cellspacing="0" bgcolor="#8cb384" style="border-size:3px; border-color:#8cb384">
+
+
+
+      <tr>
+
+
+
+        <td>&nbsp;</td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+
+
+    
+
+
+
+    </td>
+
+
+
+	</tr>
+
+
+
+	
+
+
+
+
+
+
+
+	<tr>
+
+
+
+    <td width="5%"><img src="img/flag/arab.jpg" alt="Banglasdeshi Mosques in Britain" width="32" height="25" /></td>
+
+
+
+    <td width="50%">Banglasdeshi Mosques <strong>2.58%</strong></td>
+
+
+
+    <td width="45%">
+
+
+
+    
+
+
+
+    <table width="2.58%" border="1" cellpadding="0" cellspacing="0" bgcolor="#8cb384" style="border-size:3px; border-color:#8cb384">
+
+
+
+      <tr>
+
+
+
+        <td>&nbsp;</td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+
+
+    
+
+
+
+    </td>
+
+
+
+	</tr>
+
+
+
+	
+
+
+
+
+
+
+
+	<tr>
+
+
+
+    <td width="5%"><img src="img/flag/tur.jpg" alt="Turkish Mosques in Britain" width="32" height="25" /></td>
+
+
+
+    <td width="50%">Turkish Mosques <strong>2.48%</strong></td>
+
+
+
+    <td width="45%">
+
+
+
+    
+
+
+
+    <table width="2.48%" border="1" cellpadding="0" cellspacing="0" bgcolor="#8cb384" style="border-size:3px; border-color:#8cb384">
+
+
+
+      <tr>
+
+
+
+        <td>&nbsp;</td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+
+
+    
+
+
+
+    </td>
+
+
+
+	</tr>
+
+
+
+	
+
+
+
+
+
+
+
+	<tr>
+
+
+
+    <td width="5%"><img src="img/flag/tur.jpg" alt="Somali Mosques in Britain" width="32" height="25" /></td>
+
+
+
+    <td width="50%">Somali Mosques <strong>2.38%</strong></td>
+
+
+
+    <td width="45%">
+
+
+
+    
+
+
+
+    <table width="2.38%" border="1" cellpadding="0" cellspacing="0" bgcolor="#8cb384" style="border-size:3px; border-color:#8cb384">
+
+
+
+      <tr>
+
+
+
+        <td>&nbsp;</td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+
+
+    
+
+
+
+    </td>
+
+
+
+	</tr>
+
+
+
+	
+
+
+
+
+
+
+
+	<tr>
+
+
+
+    <td width="5%"><img src="img/flag/uni.jpg" alt="Gujerati and Pakistani Mosques in Britain" width="32" height="25" /></td>
+
+
+
+    <td width="50%">Gujerati and Pakistani Mosques <strong>0.79%</strong></td>
+
+
+
+    <td width="45%">
+
+
+
+    
+
+
+
+    <table width="0.79%" border="1" cellpadding="0" cellspacing="0" bgcolor="#8cb384" style="border-size:3px; border-color:#8cb384">
+
+
+
+      <tr>
+
+
+
+        <td>&nbsp;</td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+
+
+    
+
+
+
+    </td>
+
+
+
+	</tr>
+
+
+
+	
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+    <td width="50%" valign="top">
+
+
+
+    <table width="100%" border="0" cellspacing="5" cellpadding="5">
+
+
+
+  
+
+
+
+
+
+
+
+	<tr>
+
+
+
+    <td width="5%"><img src="img/flag/deobandi.jpg" alt="Deobandi Mosques" width="32" height="25" /></td>
+
+
+
+    <td width="50%">Deobandi Mosques <strong>42.79%</strong></td>
+
+
+
+    <td width="47%">
+
+
+
+    
+
+
+
+    <table width="42.79%" border="1" cellpadding="0" cellspacing="0" bgcolor="#8cb384" style="border-size:3px; border-color:#8cb384">
+
+
+
+      <tr>
+
+
+
+        <td>&nbsp;</td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+
+
+    
+
+
+
+    </td>
+
+
+
+	</tr>
+
+
+
+
+
+
+
+	<tr>
+
+
+
+    <td width="5%"><img src="img/flag/sufi.jpg" alt="Sufi - Bareilvi Mosques" width="32" height="25" /></td>
+
+
+
+    <td width="50%">Sufi - Bareilvi Mosques <strong>30.47%</strong></td>
+
+
+
+    <td width="47%">
+
+
+
+    
+
+
+
+    <table width="30.47%" border="1" cellpadding="0" cellspacing="0" bgcolor="#8cb384" style="border-size:3px; border-color:#8cb384">
+
+
+
+      <tr>
+
+
+
+        <td>&nbsp;</td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+
+
+    
+
+
+
+    </td>
+
+
+
+	</tr>
+
+
+
+
+
+
+
+	<tr>
+
+
+
+    <td width="5%"><img src="img/flag/sufi.jpg" alt=" Mosques" width="32" height="25" /></td>
+
+
+
+    <td width="50%"> Mosques <strong>16.96%</strong></td>
+
+
+
+    <td width="47%">
+
+
+
+    
+
+
+
+    <table width="16.96%" border="1" cellpadding="0" cellspacing="0" bgcolor="#8cb384" style="border-size:3px; border-color:#8cb384">
+
+
+
+      <tr>
+
+
+
+        <td>&nbsp;</td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+
+
+    
+
+
+
+    </td>
+
+
+
+	</tr>
+
+
+
+
+
+
+
+	<tr>
+
+
+
+    <td width="5%"><img src="img/flag/sufi.jpg" alt="Sunni - Deobandi Mosques" width="32" height="25" /></td>
+
+
+
+    <td width="50%">Sunni - Deobandi Mosques <strong>12.21%</strong></td>
+
+
+
+    <td width="47%">
+
+
+
+    
+
+
+
+    <table width="12.21%" border="1" cellpadding="0" cellspacing="0" bgcolor="#8cb384" style="border-size:3px; border-color:#8cb384">
+
+
+
+      <tr>
+
+
+
+        <td>&nbsp;</td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+
+
+    
+
+
+
+    </td>
+
+
+
+	</tr>
+
+
+
+
+
+
+
+	<tr>
+
+
+
+    <td width="5%"><img src="img/flag/sufi.jpg" alt="Sunni - Mainstream Mosques" width="32" height="25" /></td>
+
+
+
+    <td width="50%">Sunni - Mainstream Mosques <strong>9.40%</strong></td>
+
+
+
+    <td width="47%">
+
+
+
+    
+
+
+
+    <table width="9.40%" border="1" cellpadding="0" cellspacing="0" bgcolor="#8cb384" style="border-size:3px; border-color:#8cb384">
+
+
+
+      <tr>
+
+
+
+        <td>&nbsp;</td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+
+
+    
+
+
+
+    </td>
+
+
+
+	</tr>
+
+
+
+
+
+
+
+	<tr>
+
+
+
+    <td width="5%"><img src="img/flag/salafi.jpg" alt="Salafi Mosques" width="32" height="25" /></td>
+
+
+
+    <td width="50%">Salafi Mosques <strong>9.08%</strong></td>
+
+
+
+    <td width="47%">
+
+
+
+    
+
+
+
+    <table width="9.08%" border="1" cellpadding="0" cellspacing="0" bgcolor="#8cb384" style="border-size:3px; border-color:#8cb384">
+
+
+
+      <tr>
+
+
+
+        <td>&nbsp;</td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+
+
+    
+
+
+
+    </td>
+
+
+
+	</tr>
+
+
+
+
+
+
+
+	<tr>
+
+
+
+    <td width="5%"><img src="img/flag/salafi.jpg" alt="Maudoodi  Mosques" width="32" height="25" /></td>
+
+
+
+    <td width="50%">Maudoodi  Mosques <strong>5.29%</strong></td>
+
+
+
+    <td width="47%">
+
+
+
+    
+
+
+
+    <table width="5.29%" border="1" cellpadding="0" cellspacing="0" bgcolor="#8cb384" style="border-size:3px; border-color:#8cb384">
+
+
+
+      <tr>
+
+
+
+        <td>&nbsp;</td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+
+
+    
+
+
+
+    </td>
+
+
+
+	</tr>
+
+
+
+
+
+
+
+	<tr>
+
+
+
+    <td width="5%"><img src="img/flag/shia.jpg" alt="Shia Mosques" width="32" height="25" /></td>
+
+
+
+    <td width="50%">Shia Mosques <strong>3.67%</strong></td>
+
+
+
+    <td width="47%">
+
+
+
+    
+
+
+
+    <table width="3.67%" border="1" cellpadding="0" cellspacing="0" bgcolor="#8cb384" style="border-size:3px; border-color:#8cb384">
+
+
+
+      <tr>
+
+
+
+        <td>&nbsp;</td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+
+
+    
+
+
+
+    </td>
+
+
+
+	</tr>
+
+
+
+
+
+
+
+	<tr>
+
+
+
+    <td width="5%"><img src="img/flag/shia.jpg" alt="Sunni - Salafi Mosques" width="32" height="25" /></td>
+
+
+
+    <td width="50%">Sunni - Salafi Mosques <strong>3.03%</strong></td>
+
+
+
+    <td width="47%">
+
+
+
+    
+
+
+
+    <table width="3.03%" border="1" cellpadding="0" cellspacing="0" bgcolor="#8cb384" style="border-size:3px; border-color:#8cb384">
+
+
+
+      <tr>
+
+
+
+        <td>&nbsp;</td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+
+
+    
+
+
+
+    </td>
+
+
+
+	</tr>
+
+
+
+
+
+
+
+	<tr>
+
+
+
+    <td width="5%"><img src="img/flag/shia-t.jpg" alt="Shia - Twelvers Mosques" width="32" height="25" /></td>
+
+
+
+    <td width="50%">Shia - Twelvers Mosques <strong>2.81%</strong></td>
+
+
+
+    <td width="47%">
+
+
+
+    
+
+
+
+    <table width="2.81%" border="1" cellpadding="0" cellspacing="0" bgcolor="#8cb384" style="border-size:3px; border-color:#8cb384">
+
+
+
+      <tr>
+
+
+
+        <td>&nbsp;</td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+
+
+    
+
+
+
+    </td>
+
+
+
+	</tr>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+</table>    
+
+
+
+    
+
+
+
+    </td>
+
+
+
+  </tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+     
+
+
+
+    </div> 
+
+
+
+ 
+
+
+
+    <div id="searches" class="clearfix"> 
+
+
+
+    <h3>Featured Mosques</h3>
+
+
+
+    <ul>   
+
+
+
+  		<li><a href="mosques/england/london/newham/upton-park/Al-Athariyyah-Upton-Park-Newham/51" title="Al-Athariyyah Mosque (Upton Park, Newham)">Al-Athariyyah Mosque</a></li>  
+
+
+
+    	<li><a href="mosques/england/london/newham/forest-gate/Azhar-Academy-Forest-Gate-Newham-London/1611" title="Azhar Masjid Mosque (Forest Gate, Newham)">Azhar Masjid</a></li>        
+
+
+
+        <li><a href="mosques/england/london/newham/forest-gate/Al-Karam-Mosque-Forest-Gate-Newham/74" title="Al-Karam Mosque (Forest Gate, Newham)">Al-Karam Mosque</a></li>
+
+
+
+        <li><a href="mosques/england/london/camden/kentish-town/Baitul-Amaan-Mosque-Kentish-Town-Camden/149" title="Baitul Amaan Mosque (Kentish Town, Camden)">Baitul Amaan Mosque</a></li>
+
+
+
+        <li><a href="mosques/england/london/tower-hamlets/bethnal-green/Baitul-Mamur-Academy-Bethnal-Green-Tower-Hamlets/150" title="Baitul Mamur Academy (Bethnal Green, Tower Hamlets)">Baitul Mamur Academy</a></li>
+
+
+
+        <li><a href="mosques/england/london/wandsworth/balham/Balham-Mosque-Balham-Wandsworth/156" title="Balham Mosque (Balham, Wandsworth)">Balham Mosque</a></li>
+
+
+
+        <li><a href="mosques/england/london/southwark/newington/Bait-ul-Aziz-Islamic-Cultural-Centre-Camberwell-Southwark/153" title="Bait-ul-Aziz Islamic Cultural Centre (Southwark, Southwark)">Bait-ul-Aziz Mosque</a></li>
+
+
+
+        <li><a href="mosques/england/london/croydon/norbury/Bismillah-Cultural-Centre-Norbury-Croydon/185" title="Bismillah Cultural Centre (Norbury, Croydon)">Bismillah Cultural Centre</a></li>
+
+
+
+        <li><a href="mosques/england/london/hounslow/chiswick/Chiswick-Mosque-Chiswick-Hounslow/242" title="Chiswick Mosque (Chiswick, Hounslow)">Chiswick Mosque</a></li>
+
+
+
+        <li><a href="mosques/england/london/ealing/southall/Central-Jamia-Masjid-Southall-Ealing/219" title="Central Jamia Masjid (Southall, Ealing)">Central Jamia Masjid</a></li>
+
+
+
+        <li><a href="mosques/england/london/brent/dudden-hill/Central-Mosque-Of-Brent-Willesden-Green-Brent/230" title="Central Mosque Of Brent (Willesden Green, Brent)">Central Mosque Of Brent</a></li>
+
+
+
+     </ul>
+
+
+
+     
+
+
+
+     <ul>
+
+
+
+     	<li><a href="mosques/england/london/waltham-forest/chingford/Chingford-Islamic-Society-Chingford-Waltham-Forest/241" title="Chingford Islamic Society (Chingford, Waltham Forest)">Chingford Islamic Society</a></li>
+
+
+
+        <li><a href="mosques/england/london/newham/manor-park/Church-Road-Masjid-Manor-Park-Newham/243" title="Church Road Masjid (Manor Park, Newham)">Church Road Masjid</a></li>
+
+
+
+        <li><a href="mosques/england/london/islington/angel/City-University-Islaamic-Society-Angel-Islington/245" title="City University Islaamic Society (Angel, Islington)">City University Islamic</a></li>
+
+
+
+        <li><a href="mosques/england/london/brent/cricklewood/Dar-Al-Islam-Foundation-Cricklewood-Brent/258" title="Dar Al Islam Foundation (Cricklewood, Brent)">Dar Al Islam Foundation</a></li>
+
+
+
+        <li><a href="mosques/england/london/tower-hamlets/bromley-by-bow/Darul-Arqam-Bromley-by-Bow-Tower-Hamlets/266" title="Darul Arqam (Tower Hamlets)">Darul Arqam</a></li>
+
+
+
+        <li><a href="mosques/england/london/tower-hamlets/shadwell/Darul-Ummah-Masjid-Shadwell-Tower-Hamlets/272" title="Darul Ummah Masjid (Shadwell, Tower Hamlets)">Darul Ummah Masjid</a></li>
+
+
+
+        <li><a href="mosques/england/london/newham/manor-park/Darus-Salaam-Manor-Park-Newham/285" title="Darus Salaam (Manor Park, Newham)">Darus Salaam</a></li>
+
+
+
+        <li><a href="mosques/england/london/kensington-and-chelsea/notting-hill-gate/Dawat-e-Hadiyah-Kensington-and-Chelsea/291" title="Dawat-e-Hadiyah (Kensington and Chelsea)">Dawat-e-Hadiyah</a></li>
+
+
+
+        <li><a href="mosques/england/london/newham/upton-park/East-End-Islamic-Centre-Upton-Park-Newham/309" title="East End Islamic Centre (Upton Park, Newham)">East End Islamic Centre</a></li>
+
+
+
+        <li><a href="mosques/england/london/barnet/edgware/Edgware-Islamic-Centre-Edgware-Barnet-London/315" title="Edgware Islamic Centre (Edgware, Barnet)">Edgware Islamic Centre</a></li>
+
+
+
+        <li><a href="mosques/england/london/enfield/edmonton/Edmonton-Islamic-Centre-Edmonton-Enfield-London/316" title="Edmonton Islamic Centre (Edmonton, Enfield)">Edmonton Islamic Centre</a></li>
+
+
+
+     </ul>
+
+
+
+     
+
+
+
+     <ul>
+
+
+
+     	<li><a href="mosques/england/london/haringey/wood-green/Fatih-Mosque-Wood-Green-Haringey-London/334" title="Fatih Mosque (Wood Green, Haringey)">Fatih Mosque</a></li>
+
+
+
+        <li><a href="mosques/england/london/newham/forest-gate/Forest-Gate-Mosque-Forest-Gate-Newham/339" title="Forest Gate Mosque (Forest Gate, Newham)">Forest Gate Mosque</a></li>
+
+
+
+        <li><a href="mosques/england/london/haringey/seven-sisters/Ghana-Muslim-Welfare-Centre-Tottenham-Haringey/341" title="Ghana Muslim Welfare Centre, Seven Sisters">Ghana Muslim Welfare</a></li>
+
+
+
+        <li><a href="mosques/england/london/southwark/dulwich/Ghous-e-Azam-Mosque-Dulwich-Southwark/351" title="Ghous-e-Azam Mosque (Dulwich, Southwark)">Ghous-e-Azam Mosque</a></li>
+
+
+
+        <li><a href="mosques/england/london/greenwich/plumstead/Greenwich-Islamic-Centre-Plumstead-Greenwich/367" title="Greenwich Islamic Centre (Plumstead, Greenwich)">Greenwich Islamic Centre</a></li>
+
+
+
+        <li><a href="mosques/england/london/greenwich/plumstead/Greenwich-Madina-Trust-Abbey-Wood-Greenwich/368" title="Greenwich Madina Trust (Abbey Wood, Greenwich)">Greenwich Madina Trust</a></li>
+
+
+
+        <li><a href="mosques/england/london/haringey/seven-sisters/Haqqani-Centre-Seven-Sisters-Haringey/390" title="Haqqani Centre (Seven Sisters, Haringey)">Haqqani Centre</a></li>
+
+
+
+        <li><a href="mosques/england/london/harrow/wealdstone/Harrow-Central-Mosque-Middlesex-Harrow/393" title="Harrow Central Mosque (Harrow, Harrow)">Harrow Central Mosque</a></li>
+
+
+
+        <li><a href="mosques/england/london/hillingdon/hillingdon/Heathrow-Airport-Heathrow-Hillingdon/402" title="Heathrow Airport (Heathrow, Hillingdon)">Heathrow Airport</a></li>
+
+
+
+        <li><a href="mosques/england/london/harrow/canons/Husseini-Islamic-Centre-Stanmore-Harrow/425" title="Husseini Islamic Centre (Stanmore, Harrow)">Husseini Islamic Centre</a></li>
+
+
+
+        <li><a href="mosques/england/london/lambeth/streatham/Hyderi-Islamic-Centre-Streatham-Lambeth/429" title="Hyderi Islamic Centre (Streatham, Lambeth)">Hyderi Islamic Centre</a></li>
+
+
+
+     </ul>
+
+
+
+     
+
+
+
+     <ul>
+
+
+
+     	<li><a href="mosques/england/london/wandsworth/tooting/Idara-e-Jafferiya-Tooting-Wandsworth/436" title="Idara-e-Jafferiya (Tooting, Wandsworth)">Idara-e-Jafferiya</a></li>
+
+
+
+        <li><a href="mosques/england/essex/redbridge/ilford/Ilford-Islamic-Centre-Ilford-Redbridge/438" title="Ilford Islamic Centre (Ilford, Redbridge)">Ilford Islamic Centre</a></li>
+
+
+
+        <li><a href="mosques/england/essex/redbridge/ilford/Ilford-Mosque-Ilford-Redbridge/439" title="Ilford Mosque (Ilford, Redbridge)">Ilford Mosque</a></li>
+
+
+
+        <li><a href="mosques/england/london/brent/kilburn/Imam-Hussain-Mosque-Kilburn-Brent/442" title="Imam Hussain Mosque (Kilburn, Brent)">Imam Hussain Mosque</a></li>
+
+
+
+        <li><a href="mosques/england/london/islington/holloway/Iranian-Community-Centre-Holloway-Islington/454" title="Iranian Community Centre (Islington)">Iranian Community Centre</a></li>
+
+
+
+        <li><a href="mosques/england/london/newham/manor-park/Islamic-Dawah-Centre-Manor-Park-Newham/505" title="Islamic Dawah Centre (Manor Park, Newham)">Islamic Dawah Centre</a></li>
+
+
+
+        <li><a href="mosques/england/london/tower-hamlets/stepney-green/Islamic-Forum-Europe-Stepney-Green-Tower-Hamlets/512" title="Islamic Forum Europe (Tower Hamlets)">Islamic Forum Europe</a></li>
+
+
+
+        <li><a href="mosques/england/london/newham/forest-gate/Jamia-Darus-Sunnah-Forest-Gate-Newham/582" title="Jamia Darus Sunnah (Forest Gate, Newham)">Jamia Darus Sunnah</a></li>
+
+
+
+        <li><a href="mosques/england/london/tower-hamlets/aldgate-east/Jamia-Masjid-Aldgate-East-Tower-Hamlets/602" title="Jamia Masjid (Aldgate East, Tower Hamlets)">Jamia Masjid</a></li>
+
+
+
+        <li><a href="mosques/england/london/hillingdon/south-ruislip/Jumuah-Salaah-South-Ruislip-Hillingdon/727" title="Jumu'ah Salaah (South Ruislip, Hillingdon)">Jumu'ah Salaah</a></li>
+
+
+
+        <li><a href="mosques/england/london/hammersmith-and-fulham/hammersmith/Kanoon-Towhid-London-Hammersmith-London/733" title="Kanoon Towhid London (Hammersmith)">Kanoon Towhid London</a></li>
+
+
+
+     </ul>
+
+
+
+     
+
+
+
+     <ul>
+
+
+
+     	<li><a href="mosques/england/london/waltham-forest/leytonstone/Leytonstone-Mosque-Leytonstone-Waltham-Forest/772" title="Leytonstone Mosque (Leytonstone, Waltham Forest)">Leytonstone Mosque</a></li>
+
+
+
+        <li><a href="mosques/england/london/hackney/clapton/Madina-Mosque-Trust-Clapton-Hackney/816" title="Madina Mosque Trust (Clapton, Hackney)">Madina Mosque Trust</a></li>
+
+
+
+        <li><a href="mosques/england/london/westminster/bayswater/Malaysia-Hall-Bayswater-Westminster/880" title="Malaysia Hall (Bayswater, Westminster)">Malaysia Hall</a></li>
+
+
+
+        <li><a href="mosques/england/london/waltham-forest/leyton/Masjid-Albirr-Leyton-Waltham-Forest/948" title="Masjid Albirr (Leyton, Waltham Forest)">Masjid Albirr</a></li>
+
+
+
+        <li><a href="mosques/england/london/newham/plaistow/Masjid-Ibrahim-Plaistow-Newham-London/993" title="Masjid Ibrahim (Plaistow, Newham)">Masjid Ibrahim</a></li>
+
+
+
+        <li><a href="mosques/england/london/hillingdon/cranford/Masjid-as-Sunnah-Cranford-Hillingdon/1020" title="Masjid-as-Sunnah (Cranford, Hillingdon)">Masjid-as-Sunnah</a></li>
+
+
+
+        <li><a href="mosques/england/london/lambeth/brixton/Masjid-ul-Qudus-Brixton-Lambeth-London/1079" title="Masjid-ul-Qudus (Brixton, Lambeth)">Masjid-ul-Qudus</a></li>
+
+
+
+        <li><a href="mosques/england/london/westminster/goodge-street/Muslim-World-League-Goodge-Street-Westminster-London/1163" title="Muslim World League (Westminster)">Muslim World League</a></li>
+
+
+
+        <li><a href="mosques/england/london/kingston-upon-thames/new-malden/New-Malden-Jumuah-New-Malden-Kingston-upon-Thames-Surrey/1172" title="New Malden Jumu'ah (New Malden)">New Malden Jumu'ah</a></li>
+
+
+
+        <li><a href="mosques/england/london/waltham-forest/leyton/Noor-ur-Islam-Mosque-Leyton-Waltham-Forest/1196" title="Noor-ur-Islam Mosque (Leyton, Waltham Forest)">Noor-ur-Islam Mosque</a></li>
+
+
+
+        <li><a href="mosques/england/essex/havering/romford/Romford-Mosque-Romford-Havering-Essex/1272" title="Romford Mosque (Romford, Havering)">Romford Mosque</a></li>
+
+
+
+     </ul>
+
+
+
+     
+
+
+
+     <ul>
+
+
+
+     	<li><a href="mosques/england/london/westminster/paddington/Salahuddin-Trust-Paddington-Westminster-London/1278" title="Salahuddin Trust (Paddington, Westminster)">Salahuddin Trust</a></li>
+
+
+
+        <li><a href="mosques/england/essex/redbridge/seven-kings/Seven-Kings-Mosque-Seven-Kings-Ilford-Redbridge-Essex/1285" title="Seven Kings Mosque (Seven Kings, Ilford, Redbridge)">Seven Kings Mosque</a></li>
+
+
+
+        <li><a href="mosques/england/london/wandsworth/tooting/Tooting-Islamic-Centre-Tooting-Wandsworth-London/1420" title="STooting Islamic Centre (Tooting, Wandsworth)">Tooting Islamic Centre</a></li>
+
+
+
+        <li><a href="mosques/england/london/hackney/dalston/Turkish-Mosque-Dalston-Hackney/1427" title="Turkish Mosque (Dalston, Hackney)">Turkish Mosque</a></li>
+
+
+
+        <li><a href="mosques/england/london/waltham-forest/walthamstow/Uhud-Centre-Walthamstow-Waltham-Forest-London/1430" title="Uhud Centre (Walthamstow, Waltham Forest)">Uhud Centre</a></li>
+
+
+
+        <li><a href="mosques/england/london/newham/forest-gate/Upton-Lane-Mosque-Forest-Gate-Newham-London/1470" title="Upton Lane Mosque (Forest Gate, Newham)">Upton Lane Mosque</a></li>
+
+
+
+        <li><a href="mosques/england/london/brent/wembley/Wembley-Central-Masjid-Wembley-Brent-London/1484" title="Wembley Central Masjid (Wembley, Brent)">Wembley Central Masjid</a></li>
+
+
+
+        <li><a href="mosques/england/london/westminster/pimlico/Westminster-Islamic-Centre-Pimlico-Westminster/1493" title="Westminster Islamic Centre (Pimlico, Westminster)">Westminster Islamic Centre</a></li>
+
+
+
+        <li><a href="mosques/england/london/merton/wimbledon/Wimbledon-Mosque-Wimbledon-Merton-London/1496" title="Wimbledon Mosque (Wimbledon, Merton)">Wimbledon Mosque</a></li> 
+
+
+
+        <li>&nbsp;</li>
+
+
+
+        <li><strong><a href="browse/mosque-locations/uk/england/London">More London searches</a></strong></li>
+
+
+
+     </ul> 
+
+
+
+    </div> 
+
+
+
+      
+
+
+
+     <div id="locations" class="clearfix"> 
+
+
+
+     
+
+
+
+     <h3>Top UK Mosque locations</h3> 
+
+
+
+     
+
+
+
+     <ul>           
+
+
+
+     	<li><a href="browse/mosque-locations/uk/Scotland/Aberdeen" title="Mosques Masjids in Aberdeen">Aberdeen</a></li>
+
+
+
+        <li><a href="browse/mosque-locations/uk/Northern%20Ireland/County%20Down/Belfast" title="Mosques Masjids in Belfast">Belfast</a></li>
+
+
+
+        <li><a href="browse/mosque-locations/uk/England/West%20Midlands/Birmingham" title="Mosques Masjids in Birmingham">Birmingham</a></li>
+
+
+
+     </ul>
+
+
+
+     
+
+
+
+     <ul>
+
+
+
+     	<li><a href="search_mosque/mosquesearch.php?mosque=bristol&page=1">Bristol</a></li>
+
+
+
+        <li><a href="search_mosque/mosquesearch.php?mosque=cardiff&page=1">Cardiff</a></li>
+
+
+
+        <li><a href="search_mosque/mosquesearch.php?mosque=edinburgh&page=1">Edinburgh</a></li>
+
+
+
+     </ul>
+
+
+
+     
+
+
+
+     <ul>     
+
+
+
+     	<li><a href="search_mosque/mosquesearch.php?mosque=glasgow&page=1">Glasgow</a></li>
+
+
+
+     	<li><a href="search_mosque/mosquesearch.php?mosque=leeds&page=1">Leeds</a></li>
+
+
+
+     	<li><a href="search_mosque/mosquesearch.php?mosque=Leicester&page=1">Leicester</a></li>     
+
+
+
+     </ul>
+
+
+
+     
+
+
+
+     <ul>
+
+
+
+     	<li><a href="browse/mosque-locations/uk/England/Merseyside/liverpool">Liverpool</a></li>
+
+
+
+        <li><a href="browse/mosque-locations/uk/England/london">London</a></li> 
+
+
+
+        <li><a href="browse/mosque-locations/uk/England/Manchester">Manchester</a></li>
+
+
+
+     </ul>
+
+
+
+     
+
+
+
+     <ul>
+
+
+
+     	<li><a href="browse/mosque-locations/uk/England/Newcastle%20Upon%20Tyne">Newcastle</a></li>
+
+
+
+        <li><a href="browse/mosque-locations/uk/England/Nottinghamshire">Nottingham</a></li>
+
+
+
+        <li><a href="search_mosque/mosquesearch.php?mosque=Sheffield">Sheffield</a></li>
+
+
+
+     </ul>
+
+
+
+     
+
+
+
+     <ul>
+
+
+
+     	<li><a href="browse/mosque-locations">UK</a></li>
+
+
+
+        <li>&nbsp;</li> 
+
+
+
+        <li><strong><a href="browse">Browse all UK locations</a></strong></li> 
+
+
+
+     </ul> 
+
+
+
+     
+
+
+
+     </div> 
+
+
+
+</div> 
+
+
+
+     </div> 
+
+
+
+
+
+
+
+     
+
+
+
+     </div>     
+
+
+
+     
+
+
+
+<div id="footer"> 
+
+
+
+     
+
+
+
+ 
+
+
+
+ <div class="wrapper"> 
+
+
+
+     	<ul> 
+
+
+
+        	<li><a href="advertise-your-mosque.php" title="Advertise Your Mosque Here">Advertise Your Mosque</a></li> 
+
+
+
+            <li><a href="/" title="Search For a Mosque">Search Mosque</a></li> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <li><a href="sitemap.php" title="Sit Map">Site map</a></li> 
+
+
+
+            <li><a href="contact-us.php" title="Contact Us">Contact us</a></li> 
+
+
+
+ 
+
+
+
+	 
+
+
+
+</ul>	 
+
+
+
+</div> 
+
+
+
+</div>
+
+
+
+    <div class="slide-out-div">
+
+
+
+<a class="handle" href="http://link-for-non-js-users.html">Content</a>
+
+
+
+<div id="fb-root"></div>
+
+
+
+<script>(function(d, s, id) {
+
+
+
+  var js, fjs = d.getElementsByTagName(s)[0];
+
+
+
+  if (d.getElementById(id)) {return;}
+
+
+
+  js = d.createElement(s); js.id = id;
+
+
+
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+
+
+
+  fjs.parentNode.insertBefore(js, fjs);
+
+
+
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+
+
+<div class="fb-like-box" data-href="https://www.facebook.com/pages/Mosque-Directory/141064065953224" data-width="292" data-show-faces="true" data-stream="false" data-header="true"></div>
+
+
+
+</div>
+
+
+
+    
+
+
+
+</body>
+
+
+
+</html>
+
+
+
