@@ -27,7 +27,7 @@ elsif (-d $arg)
 	for my $f (@files)
 	{
 		++$i;
-		print("$i out of ", scalar(@files), "\n");
+		#print("$i out of ", scalar(@files), "\n");
 		my $info = get_mosque_info($f);
 		push(@$mosques, $info);
 	}
@@ -54,14 +54,15 @@ sub get_mosque_info
 {
 	my ($webfile) = @_;
 	
-	print "   $webfile \n";
 	my $info = {};
 	#	"name"      => "",
 	#	"address"   => "",
 	#	"postcode"  => "",
 	#	"gender"    => "",
 	#	"telephone" => "",
-	#	"capacity"  => ""
+	#	"capacity"  => "",
+	#   "longitude" => "",
+	#   "latitude"  => ""
 	#);
 	
 	open(my $h_webfile, "<", $webfile) or die "Could not read: $!\n";
@@ -87,13 +88,13 @@ sub get_mosque_info
 		{
 			if ($line =~ /^\s*<title>\s*(.*)/)
 			{
-				my $title = $1;
-				if ($title =~ /(.*)\s*\(.*\)/)
+				$info->{"name"} = $1;
+				if ($info->{"name"} =~ /(.*)\s*\(.*\)/)
 				{
 					$info->{"name"} = $1;
 				}
+				next;
 			}
-			next;
 		}
 		
 		if (! defined $info->{"address"})
@@ -105,8 +106,8 @@ sub get_mosque_info
 				{
 					$info->{"address"} = $1;
 				}
+				next;
 			}
-			next;
 		}
 		
 		if (! defined $info->{"postcode"})
@@ -118,8 +119,8 @@ sub get_mosque_info
 				{
 					$info->{"postcode"} = $1;
 				}
+				next;
 			}
-			next;
 		}
 		
 		if (! defined $info->{"gender"})
@@ -131,8 +132,8 @@ sub get_mosque_info
 				{
 					$info->{"gender"} = $1;
 				}
+				next;
 			}
-			next;
 		}
 		
 		if (! defined $info->{"telephone"})
@@ -144,8 +145,8 @@ sub get_mosque_info
 				{
 					$info->{"telephone"} = $1;
 				}
+				next;
 			}
-			next;
 		}
 		
 		if (! defined $info->{"capacity"})
@@ -157,12 +158,58 @@ sub get_mosque_info
 				{
 					$info->{"capacity"} = $1;
 				}
+				next;
 			}
-			next;
+		}
+		
+		if (! defined $info->{"longitude"} and
+		    ! defined $info->{"latitude"})
+		{
+			if ($line =~ /map\.setCenter\(new\s*GLatLng\((-?\d+\.\d+),\s*(-?\d+\.\d+)/)
+			{
+				$info->{"latitude"} = $1;
+				$info->{"longitude"} = $2;
+				next;
+			}
 		}
 	}
 
 	close($h_webfile);
+	
+	my $msg = "";
+	if (!defined $info->{"longitude"})
+	{
+		$msg = "$msg No longitude\n";
+	}
+	if (!defined $info->{"latitude"})
+	{
+		$msg = "$msg No latitude\n";
+	}
+	if (!defined $info->{"address"})
+	{
+		$msg = "$msg No address\n";
+	}
+	if (!defined $info->{"postcode"})
+	{
+		$msg = "$msg No postcode\n";
+	}
+	if (!defined $info->{"capacity"})
+	{
+		$msg = "$msg No capacity\n";
+	}
+	if (!defined $info->{"gender"})
+	{
+		$msg = "$msg No gender\n";
+	}
+	if (!defined $info->{"name"})
+	{
+		$msg = "$msg No name\n";
+	}
+	
+	if ($msg ne "")
+	{
+		print "$webfile\n$msg";
+	}
 	
 	return $info;
 }
