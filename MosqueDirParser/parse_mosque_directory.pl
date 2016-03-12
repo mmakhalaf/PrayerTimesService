@@ -7,6 +7,7 @@
 use warnings;
 use strict;
 use JSON;
+use String::Util qw(trim);
 
 my $arg = $ARGV[0];
 if (!defined $arg)
@@ -86,13 +87,14 @@ sub get_mosque_info
 		
 		if (! defined $info->{"name"})
 		{
-			if ($line =~ /^\s*<title>\s*(.*)/)
+			if ($line =~ /^\s*<title>\s*([^\(\r\n]+)/)
 			{
 				$info->{"name"} = $1;
 				if ($info->{"name"} =~ /(.*)\s*\(.*\)/)
 				{
 					$info->{"name"} = $1;
 				}
+				$info->{"name"} = trim($info->{"name"});
 				next;
 			}
 		}
