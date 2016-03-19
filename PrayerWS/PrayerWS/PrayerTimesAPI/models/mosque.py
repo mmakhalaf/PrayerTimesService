@@ -1,4 +1,4 @@
-from django.db import models
+from django.contrib.gis.db import models
 
 GENDER_CHOICES = (
     ("men", "Men Only"),
@@ -17,6 +17,9 @@ class Mosque(models.Model):
     gender = models.CharField(choices=GENDER_CHOICES, max_length=10, default="unknown");
     longitude = models.FloatField(null=True);
     latitude = models.FloatField(null=True);
+    location = models.PointField(default=None, geography=True);
+
+    objects = models.GeoManager();
 
     class Meta:
         ordering = ('id',);
