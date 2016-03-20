@@ -9,10 +9,14 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
+from geocoder import google
+import re;
+
 from django.contrib.gis.geos import Point, GEOSGeometry
 from django.contrib.gis.gdal import SpatialReference, CoordTransform
 from django.contrib.gis.measure import D
 from django.db import connection
+from django.utils.datastructures import MultiValueDictKeyError
 
 
 ###
@@ -30,14 +34,14 @@ class ListMosquesHandler(APIView):
 class SearchMosquesHandler(APIView):
 
     def __init__(self):
-        self.pLon = "lon";
-        self.pLat = "lat";
-        self.pDist = "distance";
+        self.parLon = "lon";
+        self.parLat = "lat";
+        self.parDist = "distance";
+        self.parAddress = "address";
+        self.parGender = "gender";
 
 
     def get(self, request):
-        # https://developers.google.com/maps/articles/phpsqlsearch_v3#populating-the-table
-        #
         #
         # Extract parameters for the search
         # origin
@@ -55,31 +59,76 @@ class SearchMosquesHandler(APIView):
         # gender      - male only or male/female
         #
 
-        origin = self.getLocation(request.query_params);
+        origin, distance = self.getLocation(request.query_params);
         if origin is None:
             # Must provide a location
             return Response(status=status.HTTP_417_EXPECTATION_FAILED);
 
-        distance = request.query_params[self.pDist];
-        if distance is None:
-            distance = 1;
+        m = Mosque.objects.filter(location__distance_lt=(origin, D(m=distance)));
+        m = self.filterByGender(request.query_params, m);
 
-        m = Mosque.objects.filter(location__distance_lt=(origin, D(km=distance)));
         print(m.query);
         serializer = MosqueSerializer(m, many=True);
         return Response(serializer.data);
 
+    # Return the origin, distance (in meters)
     def getLocation(self, qparams):
-        if qparams[self.pLon] is None or qparams[self.pLat] is None:
-            return None;
 
-        origin = Point(float(qparams[self.pLon]), float(qparams[self.pLat]), srid=4326);
-        # TODO Convert city and postcodes to lon/lat
-        #      use Google geocoders
+        # Parse the search radius. It could be,
+        #  10   - meters
+        #  10m  - miles
+        #  10km - km
+        try:
+            dist = qparams[self.parDist];
+            m = re.match(r'^([0-9]+\.?[0-9]*)\s*([A-Za-z]+)?$', str(dist));
+            if m is not None:
+                dist = float(m.group(1));
+                unit = m.group(2);
+                distance = dist;
+                if unit is not None:
+                    unit = str.lower(unit);
+                    if unit == 'm':
+                        distance *= 1609.34;
+                    elif unit == 'km':
+                        distance *= 1000;
+            else:
+                return None, None;
+        except MultiValueDictKeyError:
+            return None, None;
 
-        return origin;
+        # See if we were given lon/lat coordinates
+        try:
+            lat = float(qparams[self.parLat]);
+            lon = float(qparams[self.parLon]);
 
+            # Return a lat/lon point
+            origin = Point(lat, lon, srid=4326);
+            return origin, distance;
+        except MultiValueDictKeyError:
+            print("No Lat/Lon");
 
+        # We didn't get lon/lat, check for address
+        try:
+            # Convert city and postcodes to lon/lat
+            addr = qparams[self.parAddress];
+            # TODO : Use a Google Geocoding API Key to avoid hitting the maximum request limit
+            gc = google(addr);
+            if gc.json['status']:
+                origin = Point(gc.json['lat'], gc.json['lng'], srid=4326);
+                return origin, distance;
+        except MultiValueDictKeyError:
+            print("No address");
+
+        return None, None;
+
+    # Add a gender filter to the queryset if provided
+    def filterByGender(self, qparams, queryset):
+        try:
+            gender = qparams[self.parGender];
+            queryset = queryset.filter(gender=gender);
+        except:
+            return queryset;
+        return queryset;
 
 ###
 # Get a single mosque details given an ID

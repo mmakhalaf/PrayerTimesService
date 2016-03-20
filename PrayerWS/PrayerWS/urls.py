@@ -20,7 +20,7 @@ from django.conf.urls import url, include
 from PrayerWS.PrayerTimesAPI.views.mosque import *
 
 urlpatterns = [
-    url(r'^mosque/(?P<id>[0-9]+)', MosqueDetailsHandler.as_view()),
-    url(r'^search',  SearchMosquesHandler.as_view()),
-    url(r'^$', ListMosquesHandler.as_view())
+    url(r'^mosque/(?P<id>[0-9]+)$', MosqueDetailsHandler.as_view()),
+    url(r'^mosque/search',  SearchMosquesHandler.as_view()),
+    url(r'^mosque$', ListMosquesHandler.as_view())
 ]

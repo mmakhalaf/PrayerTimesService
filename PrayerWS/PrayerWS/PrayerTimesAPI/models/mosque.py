@@ -15,8 +15,6 @@ class Mosque(models.Model):
     postcode = models.CharField(max_length=10, blank=False);
     capacity = models.IntegerField(default=-1);
     gender = models.CharField(choices=GENDER_CHOICES, max_length=10, default="unknown");
-    longitude = models.FloatField(null=True);
-    latitude = models.FloatField(null=True);
     location = models.PointField(default=None, geography=True);
 
     objects = models.GeoManager();

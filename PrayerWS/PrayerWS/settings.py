@@ -91,7 +91,7 @@ WSGI_APPLICATION = 'PrayerWS.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE':   'django.contrib.gis.db.backends.postgis',
-        'NAME':     'MosquesDB',
+        'NAME':     'Masjidy',
         'USER':     'postgres',
         'PASSWORD': 'pwd'
     }

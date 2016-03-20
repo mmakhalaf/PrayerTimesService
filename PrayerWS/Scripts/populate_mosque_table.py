@@ -2,10 +2,9 @@
 
 from PrayerWS.PrayerTimesAPI.models.mosque import Mosque
 from PrayerWS.PrayerTimesAPI.serializers.mosque import MosqueSerializer
-from django.contrib.gis.geos import Point, GEOSGeometry
-from django.contrib.gis.utils import layermapping
-from django.db.utils import DataError
-from django.db import connection
+from django.contrib.gis.geos import Point
+from geocoder import google
+import pyproj;
 import json
 
 # p1 = GEOSGeometry('SRID=3857;POINT(52.45 -1.9)');
@@ -21,9 +20,10 @@ print("Adding..");
 uid = 0;
 f = open("../MosqueDirParser/MD_Site.JSON");
 data = json.load(f);
+
 for m in data:
+
     m["id"] = uid;
-    uid += 1;
 
     print(m["name"]);
     if "gender" in m.keys():
@@ -34,20 +34,42 @@ for m in data:
             m["gender"] = "men";
         else:
             m["gender"] = "unknown";
-    #p = GEOSGeometry('SRID=4326;POINT({} {})'.format(m["latitude"], m["longitude"]));
-    p = Point(float(m["latitude"]), float(m["longitude"]), srid=4326);
+    else:
+        m["gender"] = "unknown";
+
+    try:
+        if m["accuracy"] > "C":
+            print("Ignored {}".format(m['name']));
+            continue;
+    except KeyError:
+        print("");
+
+    # gc = google("{}, {}, {}, United Kingdom".format(m['name'], m['address'], m['postcode']));
+    # if gc.json['status'] == False:
+    #     print(" ===> Failed");
+    #     continue;
+    # p = Point(gc.json['lat'], gc.json['lng'], srid=4326);
+    #
+    # geod = pyproj.Geod(ellps='WGS84')
+    # d1, d2, p_dist = geod.inv(gc.json['lng'], gc.json['lat'], float(m['longitude']), float(m['latitude']), False);
+    p = Point(float(m['latitude']), float(m['longitude']), srid=4326);
     m["location"] = p;
+    del m['latitude'];
+    del m['longitude'];
+    try:
+        del m['accuracy'];
+    except KeyError:
+        print("");
 
     serializer = MosqueSerializer(data=m);
     if serializer.is_valid():
-        #try:
+        uid = uid + 1;
         serializer.save();
-        #except DataError:
-        #    print(connection.queries[-1]);
-
     else:
         print(" => Failed");
         print(" " + str(serializer.errors));
+
+
 
 f.close();
 
