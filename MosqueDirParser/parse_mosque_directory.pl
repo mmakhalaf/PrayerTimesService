@@ -63,7 +63,8 @@ sub get_mosque_info
 	#	"telephone" => "",
 	#	"capacity"  => "",
 	#   "longitude" => "",
-	#   "latitude"  => ""
+	#   "latitude"  => "",
+	#   "accuracy"  => ""
 	#);
 	
 	open(my $h_webfile, "<", $webfile) or die "Could not read: $!\n";
@@ -106,7 +107,9 @@ sub get_mosque_info
 				my $next_line = $lines[++$line_num];
 				if ($next_line =~ />\s*(.*)\s*</)
 				{
-					$info->{"address"} = $1;
+					if ($1 ne "") {
+						$info->{"address"} = $1;
+					}
 				}
 				next;
 			}
@@ -119,7 +122,9 @@ sub get_mosque_info
 				my $next_line = $lines[++$line_num];
 				if ($next_line =~ />\s*(.*)\s*</)
 				{
-					$info->{"postcode"} = $1;
+					if ($1 ne "") {
+						$info->{"postcode"} = $1;
+					}
 				}
 				next;
 			}
@@ -132,7 +137,9 @@ sub get_mosque_info
 				my $next_line = $lines[++$line_num];
 				if ($next_line =~ />\s*(.*)\s*</)
 				{
-					$info->{"gender"} = $1;
+					if ($1 ne "") {
+						$info->{"gender"} = $1;
+					}
 				}
 				next;
 			}
@@ -145,7 +152,9 @@ sub get_mosque_info
 				my $next_line = $lines[++$line_num];
 				if ($next_line =~ />\s*(.*)\s*</)
 				{
-					$info->{"telephone"} = $1;
+					if ($1 ne "") {
+						$info->{"telephone"} = $1;
+					}
 				}
 				next;
 			}
@@ -158,7 +167,9 @@ sub get_mosque_info
 				my $next_line = $lines[++$line_num];
 				if ($next_line =~ />\s*(.*)\s*</)
 				{
-					$info->{"capacity"} = $1;
+					if ($1 ne "") {
+						$info->{"capacity"} = $1;
+					}
 				}
 				next;
 			}
@@ -171,6 +182,19 @@ sub get_mosque_info
 			{
 				$info->{"latitude"} = $1;
 				$info->{"longitude"} = $2;
+				next;
+			}
+		}
+		
+		if (! defined $info->{"accuracy"})
+		{
+			if ($line =~ />Data Accuracy:</)
+			{
+				my $next_line = $lines[++$line_num];
+				if ($next_line =~ /<strong>([A-Za-z]):<\/strong>/)
+				{
+					$info->{"accuracy"} = $1;
+				}
 				next;
 			}
 		}
@@ -206,6 +230,10 @@ sub get_mosque_info
 	if (!defined $info->{"name"})
 	{
 		$msg = "$msg No name\n";
+	}
+	if (!defined $info->{"accuracy"})
+	{
+		$msg = "$msg No accuracy\n";
 	}
 	
 	if ($msg ne "")
