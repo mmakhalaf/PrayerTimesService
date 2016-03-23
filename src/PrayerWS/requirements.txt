@@ -1,0 +1,5 @@
+django
+djangorestframework
+geocoder
+pyproj
+requests

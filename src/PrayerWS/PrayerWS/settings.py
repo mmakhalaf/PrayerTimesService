@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.gis',
     'rest_framework',
-    'PrayerWS.PrayerTimesAPI'
+    'app'
 ]
 
 REST_FRAMEWORK = {
