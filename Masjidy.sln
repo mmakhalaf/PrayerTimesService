@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "tests", "tests\tests.pyproj", "{68159F30-106B-483B-AF89-EA800994E58B}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PrayerWS", "src\PrayerWS\PrayerWS.pyproj", "{669DF1D6-CA5B-4741-8BC9-2C3DBC1167B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68159F30-106B-483B-AF89-EA800994E58B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68159F30-106B-483B-AF89-EA800994E58B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{669DF1D6-CA5B-4741-8BC9-2C3DBC1167B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{669DF1D6-CA5B-4741-8BC9-2C3DBC1167B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{669DF1D6-CA5B-4741-8BC9-2C3DBC1167B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{669DF1D6-CA5B-4741-8BC9-2C3DBC1167B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
