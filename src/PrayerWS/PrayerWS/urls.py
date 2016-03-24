@@ -17,7 +17,7 @@ from django.conf.urls import url
 from django.contrib import admin
 
 from django.conf.urls import url, include
-from app.views.mosque import *
+from mosques.views import *
 
 urlpatterns = [
     url(r'^mosque/(?P<id>[0-9]+)$', MosqueDetailsHandler.as_view()),
