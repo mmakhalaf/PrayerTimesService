@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.gis',
     'rest_framework',
-    'app'
+    'mosques',
+    'prayer_times'
 ]
 
 REST_FRAMEWORK = {

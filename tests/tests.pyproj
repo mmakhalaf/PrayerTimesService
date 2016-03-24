@@ -11,8 +11,10 @@
     <OutputPath>.</OutputPath>
     <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <InterpreterId>{e87610cc-680a-4eef-9dfa-356d3d66ab2b}</InterpreterId>
-    <InterpreterVersion>3.5</InterpreterVersion>
+    <InterpreterId>
+    </InterpreterId>
+    <InterpreterVersion>
+    </InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
@@ -24,9 +26,6 @@
     <Compile Include="testGETAllMosques.py" />
     <Compile Include="testGETMosqueDetails.py" />
     <Compile Include="testGETMosqueSearch.py" />
-  </ItemGroup>
-  <ItemGroup>
-    <InterpreterReference Include="{e87610cc-680a-4eef-9dfa-356d3d66ab2b}\3.5" />
   </ItemGroup>
   <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />

@@ -1,8 +1,8 @@
 from rest_framework import viewsets
 
-from app.http_utils.json_response import JSONResponse
-from app.serializers.mosque import MosqueSerializer
-from app.models.mosque import Mosque
+from mosques.http_utils.json_response import JSONResponse
+from mosques.serializers import MosqueSerializer
+from mosques.models import Mosque
 
 from rest_framework import status
 from rest_framework.decorators import api_view
@@ -19,7 +19,7 @@ from django.db import connection
 from django.utils.datastructures import MultiValueDictKeyError
 
 
-###
+###############################################################################
 # Handle request for listing all mosques
 # This is a GET request which takes no arguments
 class ListMosquesHandler(APIView):
@@ -29,7 +29,7 @@ class ListMosquesHandler(APIView):
         return Response(serializer.data);
 
 
-###
+###############################################################################
 # Search for mosques given some criteria
 class SearchMosquesHandler(APIView):
 
@@ -130,7 +130,7 @@ class SearchMosquesHandler(APIView):
             return queryset;
         return queryset;
 
-###
+###############################################################################
 # Get a single mosque details given an ID
 class MosqueDetailsHandler(APIView):
     def get(self, request, id):

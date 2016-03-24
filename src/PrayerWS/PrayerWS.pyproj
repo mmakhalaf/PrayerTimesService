@@ -29,33 +29,30 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="app\admin.py" />
-    <Compile Include="app\apps.py" />
-    <Compile Include="app\http_utils\json_response.py" />
-    <Compile Include="app\http_utils\__init__.py" />
-    <Compile Include="app\migrations\0001_initial.py" />
-    <Compile Include="app\migrations\__init__.py" />
-    <Compile Include="app\models\mosque.py" />
-    <Compile Include="app\models\__init__.py" />
-    <Compile Include="app\serializers\mosque.py" />
-    <Compile Include="app\serializers\__init__.py" />
-    <Compile Include="app\tests.py" />
-    <Compile Include="app\views\mosque.py" />
-    <Compile Include="app\views\__init__.py" />
-    <Compile Include="app\__init__.py" />
+    <Compile Include="mosques\mosques.py" />
+    <Compile Include="mosques\http_utils\json_response.py" />
+    <Compile Include="mosques\http_utils\__init__.py" />
+    <Compile Include="mosques\migrations\__init__.py" />
+    <Compile Include="mosques\models.py" />
+    <Compile Include="mosques\serializers.py" />
+    <Compile Include="mosques\tests.py" />
+    <Compile Include="mosques\views.py" />
+    <Compile Include="mosques\__init__.py" />
     <Compile Include="manage.py" />
     <Compile Include="PrayerWS\__init__.py" />
     <Compile Include="PrayerWS\settings.py" />
     <Compile Include="PrayerWS\urls.py" />
     <Compile Include="PrayerWS\wsgi.py" />
+    <Compile Include="prayer_times\prayer_times.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="prayer_times\tests.py" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\" />
-    <Folder Include="app\http_utils\" />
-    <Folder Include="app\migrations\" />
-    <Folder Include="app\models\" />
-    <Folder Include="app\serializers\" />
-    <Folder Include="app\views\" />
+    <Folder Include="mosques\" />
+    <Folder Include="mosques\http_utils\" />
+    <Folder Include="mosques\migrations\" />
+    <Folder Include="prayer_times\" />
     <Folder Include="PrayerWS\" />
   </ItemGroup>
   <ItemGroup>

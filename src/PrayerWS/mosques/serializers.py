@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from app.models.mosque import Mosque
+from mosques.models import Mosque
 
 
 class MosqueSerializer(serializers.HyperlinkedModelSerializer):
