@@ -9,6 +9,9 @@ for row in sheet.rows:
 
 # Algorithm
 #
+# Read excel using openpyxl
+# Read PDF??? https://dzone.com/articles/pdf-reading
+#
 # Create a genric table structure to input to the algorithm
 #  This could potentially mean the algorithm is not 'excel' dependent'
 #  The table should contain strings (or None) where empty
@@ -19,9 +22,10 @@ for row in sheet.rows:
 # Go through each row,
 #  For each cell in the row,
 #   Find the prayer names (taking synonyms into account).
+#    Account for prayer name duplicates on the same row (one actual and one for jamaa)
 #   Store the indices (or range, if merged) of their columns in 'prayer_name_columns'
 #   Store the current row index in 'prayer_name_row'
-#   Once found, end the iteration
+#   Once the row is found, end the iteration
 #
 # = Find date rows
 # date_range_rows = []
@@ -48,4 +52,6 @@ for row in sheet.rows:
 #   TODO What???
 #  For each row in 'data_range_rows',
 #   Add the time at the given cell into 'prayer_times'
+#   If a time is found in the cell, add it
+#   Otherwise, add the last found time
 #
