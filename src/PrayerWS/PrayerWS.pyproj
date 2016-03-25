@@ -43,6 +43,12 @@
     <Compile Include="PrayerWS\settings.py" />
     <Compile Include="PrayerWS\urls.py" />
     <Compile Include="PrayerWS\wsgi.py" />
+    <Compile Include="prayer_times\parser\ppt_prayer_names.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="prayer_times\parser\ptt_parser.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="prayer_times\prayer_times.py">
       <SubType>Code</SubType>
     </Compile>
@@ -54,6 +60,7 @@
     <Folder Include="mosques\migrations\" />
     <Folder Include="prayer_times\" />
     <Folder Include="PrayerWS\" />
+    <Folder Include="prayer_times\parser\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
