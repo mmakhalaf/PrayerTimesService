@@ -11,6 +11,8 @@ class PrayerTimes(models.Model):
     asr_jamaa = models.TimeField();
     maghrib_jamaa = models.TimeField();
     ishaa_jamaa = models.TimeField();
+    
+    objects = models.Manager();
 
     class Meta:
         ordering = ('id',);

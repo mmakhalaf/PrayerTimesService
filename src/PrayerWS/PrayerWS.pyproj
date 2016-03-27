@@ -7,6 +7,8 @@
     <InterpreterId>{e87610cc-680a-4eef-9dfa-356d3d66ab2b}</InterpreterId>
     <InterpreterVersion>3.5</InterpreterVersion>
     <IsWindowsApplication>False</IsWindowsApplication>
+    <PythonRunWebServerCommandArguments>runserver --settings $(DjangoSettingsModule) %SERVER_PORT% $(CommandLineArguments)</PythonRunWebServerCommandArguments>
+    <WebBrowserPort>8000</WebBrowserPort>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -44,6 +46,13 @@
     <Compile Include="PrayerWS\settings.py" />
     <Compile Include="PrayerWS\urls.py" />
     <Compile Include="PrayerWS\wsgi.py" />
+    <Compile Include="prayer_times\http_utils\prayer_tt_get.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="prayer_times\http_utils\prayer_tt_upload.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="prayer_times\http_utils\__init__.py" />
     <Compile Include="prayer_times\models.py">
       <SubType>Code</SubType>
     </Compile>
@@ -65,6 +74,9 @@
     <Compile Include="prayer_times\serializers.py" />
     <Compile Include="prayer_times\tests.py" />
     <Compile Include="prayer_times\parser\__init__.py" />
+    <Compile Include="prayer_times\views.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="prayer_times\__init__.py" />
     <Compile Include="Scripts\add_test_prayertimes.py">
       <SubType>Code</SubType>
@@ -77,6 +89,7 @@
     <Folder Include="mosques\migrations\" />
     <Folder Include="prayer_times\" />
     <Folder Include="PrayerWS\" />
+    <Folder Include="prayer_times\http_utils\" />
     <Folder Include="prayer_times\parser\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
