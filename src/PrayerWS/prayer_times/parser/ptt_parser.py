@@ -1,6 +1,7 @@
 from prayer_times.parser.ptt_prayer_names import *
 import sys
 import time
+import calendar
 from itertools import groupby
 
 
@@ -56,6 +57,8 @@ class PrayerTimeParser:
     ### ###############
         self.data = [];
         self.use_jamaa_fieldnames = False;
+        self.month = 1;
+        self.year = 1990;
 
     def ImportFromFile(self, filename):
     ### ###############################
@@ -206,10 +209,11 @@ class PrayerTimeParser:
                         "%I:%M:%S",
                         "%I:%M:%S %p");
 
+        max_days = calendar.monthrange(self.year, self.month)[1];
+
         for jam_col in jamaa_cols:
             s_row = jam_col.row_idx;
             ls = [];
-            is_first = True;
             for row_idx in range(s_row, len(self.data)):
                 val = self.data[row_idx][jam_col.col_idx];
                 t = None;
@@ -223,14 +227,15 @@ class PrayerTimeParser:
                             continue;
 
                 if t == None:
-                    if is_first == False:
+                    if len(ls) > 0:
                         ls.append(ls[len(ls)-1]);
                     continue;
                 
-                if is_first:
-                    is_first = False;
-
                 ls.append(time.strftime("%I:%M", t));
+
+                if len(ls) >= max_days:
+                    break;
+
             prayer_times[jam_col.GetPrayerName()] = ls;
 
         # Validate the number of times are the same for all prayers
@@ -251,6 +256,7 @@ class PrayerTimeParser:
         month_time = [];
 
         num_days = len(prayer_times[FajrPrayerName.name]);
+        #print("N Days: {}".format(str(num_days)));
 
         prayer_names_jamaa = [FajrPrayerName.jamaa,
                         DuhrPrayerName.jamaa,

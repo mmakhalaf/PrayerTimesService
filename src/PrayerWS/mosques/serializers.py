@@ -6,7 +6,7 @@ from mosques.models import Mosque
 class MosqueSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Mosque;
-        fields = "__all__";
+        fields = ('id', 'name', 'address', 'postcode', 'gender', 'capacity', 'location');
 
 ##### ###############################################################
 class MosqueSearchSerializer(serializers.HyperlinkedModelSerializer):

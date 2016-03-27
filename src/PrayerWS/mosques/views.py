@@ -1,23 +1,18 @@
-from rest_framework import viewsets
 
 from mosques.http_utils.json_response import JSONResponse
 from mosques.serializers import *
 from mosques.models import Mosque
 
-from rest_framework import status
-from rest_framework.decorators import api_view
-from rest_framework.response import Response
-from rest_framework.views import APIView
-
-from geocoder import google
+from geocoder import google;
 import re;
+
+from rest_framework.views import APIView
 
 from django.contrib.gis.geos import Point, GEOSGeometry
 from django.contrib.gis.gdal import SpatialReference, CoordTransform
 from django.contrib.gis.measure import D
 from django.db import connection
 from django.utils.datastructures import MultiValueDictKeyError
-
 
 ###### ########################################################################
 class ListMosquesHandler(APIView):
@@ -65,14 +60,15 @@ class SearchMosquesHandler(APIView):
         origin, distance = self.getLocation(request.query_params);
         if origin is None:
             # Must provide a location
-            return Response(status=status.HTTP_417_EXPECTATION_FAILED);
+            return JSONResponse.CreateErrorResponse("Must provide a location & distance");
 
         m = Mosque.objects.filter(location__distance_lt=(origin, D(m=distance)));
         m = self.filterByGender(request.query_params, m);
 
-        print(m.query);
+        #TODO Sort result by distance
+
         serializer = MosqueSearchSerializer(m, many=True);
-        return Response(serializer.data);
+        return JSONResponse.CreateDataResponse(serializer.data);
 
     def getLocation(self, qparams):
     ### ###########################
@@ -144,6 +140,6 @@ class MosqueDetailsHandler(APIView):
         try:
             m = Mosque.objects.get(id=id);
             serializer = MosqueSerializer(m);
-            return Response(serializer.data);
+            return JSONResponse.CreateDataResponse(serializer.data);
         except:
-            return Response(status=status.HTTP_404_NOT_FOUND);
+            return JSONResponse.CreateErrorResponse("Could not find mosque with an ID of {}".format(id));
