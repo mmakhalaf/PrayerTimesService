@@ -9,7 +9,7 @@ GENDER_CHOICES = (
 
 # Create your models here.
 class Mosque(models.Model):
-    id = models.IntegerField(primary_key=True);
+    id = models.AutoField(primary_key=True);
     name = models.CharField(max_length=100, blank=False);
     address = models.TextField(blank=False);
     postcode = models.CharField(max_length=10, blank=False);
@@ -21,4 +21,4 @@ class Mosque(models.Model):
 
     class Meta:
         ordering = ('id',);
-        app_label = 'PrayerTimesAPI';
+        app_label = 'mosques';

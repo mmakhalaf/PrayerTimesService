@@ -1,4 +1,4 @@
-from ptt_prayer_names import *
+from prayer_times.parser.ptt_prayer_names import *
 import sys
 import time
 from itertools import groupby
@@ -55,6 +55,7 @@ class PrayerTimeParser:
     def __init__(self):
     ### ###############
         self.data = [];
+        self.use_jamaa_fieldnames = False;
 
     def ImportFromFile(self, filename):
     ### ###############################
@@ -91,15 +92,10 @@ class PrayerTimeParser:
         '''
 
         prayer_times = self.__extractPrayerTimes(prayer_cols);
-        '''
-        for pt in prayer_times:
-            print(pt);
-            for p in prayer_times[pt]:
-                print(p, end=" ");
-            print("");
-        '''
 
-        return prayer_times;
+        prayer_times_list = self.__reformatPrayerTimeTable(prayer_times);
+
+        return prayer_times_list;
 
     def __findPrayerNames(self):
     ### ########################
@@ -244,3 +240,38 @@ class PrayerTimeParser:
                 raise ParsingError("The number of prayer times extracted for all prayers is not the same");
 
         return prayer_times;
+
+    def __reformatPrayerTimeTable(self, prayer_times):
+    ### ##############################################
+        """
+        Given a map prayer_times {fajr: [list_of_times]},
+        convert it to an array [{fajr: time, duhr: time}, {}, ...]
+        """
+
+        month_time = [];
+
+        num_days = len(prayer_times[FajrPrayerName.name]);
+
+        prayer_names_jamaa = [FajrPrayerName.jamaa,
+                        DuhrPrayerName.jamaa,
+                        AsrPrayerName.jamaa,
+                        MaghribPrayerName.jamaa,
+                        IshaPrayerName.jamaa];
+
+        prayer_names = [FajrPrayerName.name,
+                        DuhrPrayerName.name,
+                        AsrPrayerName.name,
+                        MaghribPrayerName.name,
+                        IshaPrayerName.name];
+
+        for i in range(0, num_days):
+            day_time = {};
+            for pi in range(0, len(prayer_names)):
+                if self.use_jamaa_fieldnames:
+                    day_time[prayer_names_jamaa[pi]] = prayer_times[prayer_names[pi]][i];
+                else:
+                    day_time[prayer_names[pi]] = prayer_times[prayer_names[pi]][i];
+            month_time.append(day_time);
+
+        return month_time;
+

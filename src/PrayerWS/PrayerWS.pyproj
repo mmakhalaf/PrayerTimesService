@@ -6,6 +6,7 @@
     <RootNamespace>PrayerWS</RootNamespace>
     <InterpreterId>{e87610cc-680a-4eef-9dfa-356d3d66ab2b}</InterpreterId>
     <InterpreterVersion>3.5</InterpreterVersion>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -13,7 +14,7 @@
     <ProjectGuid>669df1d6-ca5b-4741-8bc9-2c3dbc1167b3</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
-    <StartupFile>prayer_times\parser\ptt_excel.py</StartupFile>
+    <StartupFile>manage.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -43,6 +44,9 @@
     <Compile Include="PrayerWS\settings.py" />
     <Compile Include="PrayerWS\urls.py" />
     <Compile Include="PrayerWS\wsgi.py" />
+    <Compile Include="prayer_times\models.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="prayer_times\parser\ptt_excel.py">
       <SubType>Code</SubType>
     </Compile>
@@ -58,9 +62,14 @@
     <Compile Include="prayer_times\prayer_times.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="prayer_times\serializers.py" />
     <Compile Include="prayer_times\tests.py" />
     <Compile Include="prayer_times\parser\__init__.py" />
     <Compile Include="prayer_times\__init__.py" />
+    <Compile Include="Scripts\add_test_prayertimes.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scripts\populate_mosque_table.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="mosques\" />
@@ -69,6 +78,7 @@
     <Folder Include="prayer_times\" />
     <Folder Include="PrayerWS\" />
     <Folder Include="prayer_times\parser\" />
+    <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />

@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class PrayerTimesAPIConfig(AppConfig):
-    name = 'PrayerTimesAPI'
+    name = 'prayer_times'

@@ -25,6 +25,8 @@ class PrayerName:
 ##### #########################################################################
 class FajrPrayerName(PrayerName):
     name = "fajr";
+    jamaa = name + "_jamaa";
+
     def __init__(self):
     ### ###############
         self.name = FajrPrayerName.name;
@@ -35,6 +37,8 @@ class FajrPrayerName(PrayerName):
 ##### #########################################################################
 class DuhrPrayerName(PrayerName):
     name = "duhr";
+    jamaa = name + "_jamaa";
+
     def __init__(self):
     ### ###############
         self.name = DuhrPrayerName.name;
@@ -49,6 +53,8 @@ class DuhrPrayerName(PrayerName):
 ##### #########################################################################
 class AsrPrayerName(PrayerName):
     name = "asr";
+    jamaa = name + "_jamaa";
+
     def __init__(self):
     ### ###############
         self.name = AsrPrayerName.name;
@@ -59,6 +65,8 @@ class AsrPrayerName(PrayerName):
 ##### #########################################################################
 class MaghribPrayerName(PrayerName):
     name = "maghrib";
+    jamaa = name + "_jamaa";
+
     def __init__(self):
     ### ###############
         self.name = MaghribPrayerName.name;
@@ -70,7 +78,9 @@ class MaghribPrayerName(PrayerName):
         
 ##### #########################################################################
 class IshaPrayerName(PrayerName):
-    name = "isha";
+    name = "ishaa";
+    jamaa = name + "_jamaa";
+
     def __init__(self):
     ### ###############
         self.name = IshaPrayerName.name;
@@ -106,7 +116,8 @@ def ContainsJamaat(content):
     content = str.lower(content);
     jamat_syn = ["jamat",
                  "jamaa",
-                 "jamaat"];
+                 "jamaat",
+                 "jama"];
 
     for syn in jamat_syn:
         if content.find(syn) != -1:

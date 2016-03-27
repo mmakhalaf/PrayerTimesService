@@ -1,5 +1,5 @@
-from ptt_parser import PrayerTimeParser, PrayerColumn;
-from ptt_prayer_names import *
+from prayer_times.parser.ptt_parser import PrayerTimeParser, PrayerColumn;
+from prayer_times.parser.ptt_prayer_names import *
 from openpyxl import *
 
 
@@ -26,7 +26,3 @@ class PrayerTimeExcelParser(PrayerTimeParser):
                 self.data[len(self.data)-1].append(cell.value);
             
         return self.ImportFromData();
-
-if __name__ == "__main__":
-    imp = PrayerTimeExcelParser();
-    ptimes = imp.ImportFromFile("../../tests/data/Excel/test.xlsx");
