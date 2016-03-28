@@ -1,4 +1,3 @@
-
 import datetime;
 import calendar;
 
@@ -27,14 +26,14 @@ class PTTGetRequest:
         try:
             self.mosque_id = int(float(params[PTTGetRequest.parMosqueId]));
         except Exception as e:
-            return;
+            return False, "No mosque ID or invalid ID was provided.";
 
         # Use a duration (in days)
         try:
             num_days = int(float(params[PTTGetRequest.parNumDays]));
             if num_days > 0:
                 self.end_date = self.start_date + datetime.timedelta(days=num_days);
-                return;
+                return True, None;
         except Exception as e:
             pass;
 
@@ -53,15 +52,6 @@ class PTTGetRequest:
             self.start_date = datetime.date(year, month, range[0]);
             self.end_date = datetime.date(year, month, range[1]);
         except Exception as e:
-            return;
-
-
-    def IsValid(self):
-    ### ##############
-        """Return a True/False and the reason for failure (or None)"""
-        if self.mosque_id is None:
-            return False, "No mosque ID was provided.";
-        if self.start_date is None or self.end_date is None:
             return False, "No date range could be determined.";
 
         return True, None;

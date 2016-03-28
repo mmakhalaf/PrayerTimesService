@@ -1,3 +1,5 @@
+
+from prayer_times.http_utils.prayer_tt_upload import PTTUploadRequest
 from prayer_times.http_utils.prayer_tt_get import PTTGetRequest
 from prayer_times.models import PrayerTimes
 from prayer_times.serializers import PrayerTimesSerializer
@@ -5,8 +7,12 @@ from prayer_times.serializers import PrayerTimesSerializer
 from mosques.http_utils.json_response import JSONResponse
 
 from rest_framework.views import APIView
+from rest_framework.parsers import MultiPartParser, FormParser
+
+import os
 
 class PrayerTimeTableUploadHandler(APIView):
+    parser_classes = (MultiPartParser, FormParser, )
     def post(self, request):
     ### ####################
         """
@@ -16,7 +22,27 @@ class PrayerTimeTableUploadHandler(APIView):
           month
           multiple months???
         """
-        return JSONResponse.CreateDataResponse("In Upload POST");
+
+        try:
+            file_data = request.data['files'];
+        except Exception:
+            return JSONResponse.CreateErrorResponse("No file was uploaded");
+
+        req_parser = PTTUploadRequest();
+
+        res, err = req_parser.StoreFile(file_data);
+        if not res:
+            return JSONResponse.CreateErrorResponse(err);
+
+        res, err = req_parser.ProcessData(request.data);
+        if not res:
+            return JSONResponse.CreateErrorResponse(err);
+
+        res, st = req_parser.ParseFile();
+        if not res:
+            return JSONResponse.CreateErrorResponse(st);
+
+        return JSONResponse.CreateDataResponse(st);
 
 ##### ########################################
 class PrayerTimeTableRetrieveHandler(APIView):
@@ -30,8 +56,7 @@ class PrayerTimeTableRetrieveHandler(APIView):
         """
 
         req_parser = PTTGetRequest();
-        req_parser.Process(request.query_params);
-        res, err = req_parser.IsValid();
+        res, err = req_parser.Process(request.query_params);
         if res == False:
             return JSONResponse.CreateErrorResponse(err);
 
