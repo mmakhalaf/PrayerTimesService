@@ -18,9 +18,12 @@ from django.contrib import admin
 
 from django.conf.urls import url, include
 from mosques.views import *
+from prayer_times.views import *
 
 urlpatterns = [
-    url(r'^mosque/(?P<id>[0-9]+)$', MosqueDetailsHandler.as_view()),
+    url(r'^mosque$', ListMosquesHandler.as_view()),
     url(r'^mosque/search',  SearchMosquesHandler.as_view()),
-    url(r'^mosque$', ListMosquesHandler.as_view())
+    url(r'^mosque/(?P<id>[0-9]+)$', MosqueDetailsHandler.as_view()),
+    url(r'^timetable/search$', PrayerTimeTableRetrieveHandler.as_view()),
+    url(r'^timetable/upload$', PrayerTimeTableUploadHandler.as_view())
 ]

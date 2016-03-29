@@ -6,6 +6,9 @@
     <RootNamespace>PrayerWS</RootNamespace>
     <InterpreterId>{e87610cc-680a-4eef-9dfa-356d3d66ab2b}</InterpreterId>
     <InterpreterVersion>3.5</InterpreterVersion>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <PythonRunWebServerCommandArguments>runserver --settings $(DjangoSettingsModule) %SERVER_PORT% $(CommandLineArguments)</PythonRunWebServerCommandArguments>
+    <WebBrowserPort>8000</WebBrowserPort>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -29,6 +32,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="mosques\http_utils\mosque_search.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="mosques\mosques.py" />
     <Compile Include="mosques\http_utils\json_response.py" />
     <Compile Include="mosques\http_utils\__init__.py" />
@@ -43,10 +49,42 @@
     <Compile Include="PrayerWS\settings.py" />
     <Compile Include="PrayerWS\urls.py" />
     <Compile Include="PrayerWS\wsgi.py" />
+    <Compile Include="prayer_times\http_utils\prayer_tt_get.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="prayer_times\http_utils\prayer_tt_upload.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="prayer_times\http_utils\__init__.py" />
+    <Compile Include="prayer_times\models.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="prayer_times\parser\ptt_excel.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="prayer_times\parser\ptt_pdf.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="prayer_times\parser\ptt_prayer_names.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="prayer_times\parser\ptt_parser.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="prayer_times\prayer_times.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="prayer_times\serializers.py" />
     <Compile Include="prayer_times\tests.py" />
+    <Compile Include="prayer_times\parser\__init__.py" />
+    <Compile Include="prayer_times\views.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="prayer_times\__init__.py" />
+    <Compile Include="Scripts\add_test_prayertimes.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scripts\populate_mosque_table.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="mosques\" />
@@ -54,6 +92,9 @@
     <Folder Include="mosques\migrations\" />
     <Folder Include="prayer_times\" />
     <Folder Include="PrayerWS\" />
+    <Folder Include="prayer_times\http_utils\" />
+    <Folder Include="prayer_times\parser\" />
+    <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />

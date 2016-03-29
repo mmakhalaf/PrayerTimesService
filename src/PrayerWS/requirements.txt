@@ -1,5 +1,7 @@
 django
 djangorestframework
+djangorestframework-gis
 geocoder
 pyproj
 requests
+openpyxl
