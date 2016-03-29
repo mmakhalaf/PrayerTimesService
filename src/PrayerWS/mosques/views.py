@@ -2,17 +2,13 @@
 from mosques.http_utils.json_response import JSONResponse
 from mosques.serializers import *
 from mosques.models import Mosque
-
-from geocoder import google;
-import re;
+from mosques.http_utils.mosque_search import MosqueSearch
 
 from rest_framework.views import APIView
 
 from django.contrib.gis.geos import Point, GEOSGeometry
 from django.contrib.gis.gdal import SpatialReference, CoordTransform
 from django.contrib.gis.measure import D
-from django.db import connection
-from django.utils.datastructures import MultiValueDictKeyError
 
 ###### ########################################################################
 class ListMosquesHandler(APIView):
@@ -31,106 +27,25 @@ class ListMosquesHandler(APIView):
 ##### #########################################################################
 class SearchMosquesHandler(APIView):
     """Search for mosques given some criteria"""
-    def __init__(self):
-    ### ###############
-        self.parLon = "lon";
-        self.parLat = "lat";
-        self.parDist = "distance";
-        self.parAddress = "address";
-        self.parGender = "gender";
-
-
+    
     def get(self, request):
     ### ###################
-        """
-        Extract parameters for the search
-         origin
-         location   - origin point
-         postcode   - origin postcode
-         city       - origin city/town name
-         Need to convert postcode / city to lon/lat coordinates
+
+        req_parser = MosqueSearch();
+        res, err = req_parser.Process(request.query_params);
+        if not res:
+            return JSONResponse.CreateErrorResponse(err);
         
-         distance <  - distance to location
-          Need to convert distance to be between lon/lat coordinates
-         unit        - unit that the distance was provided in
-        
-         gender      - male only or male/female
-        """
+        m = Mosque.objects.filter(location__distance_lt=(req_parser.origin, D(m=req_parser.distance)));
+        if req_parser.gender is not None:
+            m = m.filter(gender=req_parser.gender);
 
-        origin, distance = self.getLocation(request.query_params);
-        if origin is None:
-            # Must provide a location
-            return JSONResponse.CreateErrorResponse("Must provide a location & distance");
-
-        m = Mosque.objects.filter(location__distance_lt=(origin, D(m=distance)));
-        m = self.filterByGender(request.query_params, m);
-
+        #TODO when filtering by gender, display unknown mosques
         #TODO Sort result by distance
 
         serializer = MosqueSearchSerializer(m, many=True);
         return JSONResponse.CreateDataResponse(serializer.data);
 
-    def getLocation(self, qparams):
-    ### ###########################
-        """
-        Return the origin, distance (in meters)
-        Parse the search radius. It could be,
-         10   - meters
-         10m  - miles
-         10km - km
-        """
-        try:
-            dist = qparams[self.parDist];
-            m = re.match(r'^([0-9]+\.?[0-9]*)\s*([A-Za-z]+)?$', str(dist));
-            if m is not None:
-                dist = float(m.group(1));
-                unit = m.group(2);
-                distance = dist;
-                if unit is not None:
-                    unit = str.lower(unit);
-                    if unit == 'm':
-                        distance *= 1609.34;
-                    elif unit == 'km':
-                        distance *= 1000;
-            else:
-                return None, None;
-        except MultiValueDictKeyError:
-            return None, None;
-
-        # See if we were given lon/lat coordinates
-        try:
-            lat = float(qparams[self.parLat]);
-            lon = float(qparams[self.parLon]);
-
-            # Return a lat/lon point
-            origin = Point(lat, lon, srid=4326);
-            return origin, distance;
-        except MultiValueDictKeyError:
-            print("No Lat/Lon");
-
-        # We didn't get lon/lat, check for address
-        try:
-            # Convert city and postcodes to lon/lat
-            addr = qparams[self.parAddress];
-            # TODO : Use a Google Geocoding API Key to avoid hitting the maximum request limit
-            gc = google(addr);
-            if gc.json['status']:
-                origin = Point(gc.json['lat'], gc.json['lng'], srid=4326);
-                return origin, distance;
-        except MultiValueDictKeyError:
-            print("No address");
-
-        return None, None;
-
-    def filterByGender(self, qparams, queryset):
-    ### ########################################
-        """Add a gender filter to the queryset if provided"""
-        try:
-            gender = qparams[self.parGender];
-            queryset = queryset.filter(gender=gender);
-        except:
-            return queryset;
-        return queryset;
 
 ##### #########################################################################
 class MosqueDetailsHandler(APIView):

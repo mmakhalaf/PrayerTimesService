@@ -32,6 +32,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="mosques\http_utils\mosque_search.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="mosques\mosques.py" />
     <Compile Include="mosques\http_utils\json_response.py" />
     <Compile Include="mosques\http_utils\__init__.py" />

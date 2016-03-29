@@ -61,11 +61,11 @@ class PrayerTimeTableRetrieveHandler(APIView):
             return JSONResponse.CreateErrorResponse(err);
 
         qs = PrayerTimes.objects.\
-                filter(mosque_id=req_parser.mosque_id).\
+                filter(mosque=req_parser.mosque_id).\
                 filter(date__gte=req_parser.start_date).\
                 filter(date__lte=req_parser.end_date);
-
-        ser = PrayerTimesSerializer(qs, many=True);
+        print(qs);
+        ser = PrayerTimesSerializer(qs, many=True, context={'request': request});
         return JSONResponse.CreateDataResponse(ser.data);
 
 
